@@ -1,0 +1,2380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HS Stock Metadata Studio — Universal Stock SEO & Metadata Workflow</title>
+<link rel="icon" href="data:image/jpeg;base64,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ljsdyyatqpWXzGqe1RNYDHJFcRUl7t+YIDG7cue6hObNdRW9KVlCy1vcOP0P6l8f2P0TfczcXZv9vx/xfJbELzG20H1ZF2NHD6cIfRxU8PriPi4uDfw357KLl4dlygo2NbrT+v7+O03UZEa3LWCeq0+hbL5csmoqmJlixqnusTmkySS3AU3Ad+Q2LHb8ue6tjb7qAT62BUA/ntp/YrL0Up1yb1Umvx6GhSSX+q8fUxP6t57+8ah/003/AHS/Rt5zc/GwqjH88NP7JZQie7l878PQ9318q8fUxtt3zEn1sQpR/OrT+zX6tueVH42LU7f5yaf/AOFf0T3cvnfh6Hm+vlXj6llFxyTvxyAfy9v0F9CuyA9tghH8uH0FeET3cvnfh6DeXyrx9S1CtvvfY4fz0fRX0Ky9Ec7NFv8A+bH0Vc0T3cvmfh6DeXZ5+pb4Kq7PqWMntUUURPrSCqDi33cPNXBEWcU1zepi3qERFkeBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAVVREARVVEAREQBEVUBRE70QBERAEREAREQBERAVVERAEREAREQBERAEREAREQBVVEQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAO9ERAEREAREQBERAEREAREQBERAf/2Q==">
+<style>
+:root{--bg:#0d1117;--panel:#151b24;--panel2:#1c2431;--line:#2a3444;--txt:#e8edf5;--mut:#8fa0b5;--gold:#c9a227;--gold2:#e6c65c;--ok:#2ecc71;--warn:#f1c40f;--bad:#e74c3c;--rad:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding-bottom:60px}
+header{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:12px;padding:10px 16px;background:linear-gradient(180deg,#11161f,#0d1117);border-bottom:1px solid var(--line);flex-wrap:wrap}
+header img#logo{width:46px;height:46px;border-radius:8px;background:#f7f8fa;padding:2px}
+.brand .b1{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:700;letter-spacing:.5px}
+.brand .b1 em{color:var(--gold2);font-style:normal}
+.brand .b2{font-size:11px;color:var(--mut)}
+nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.tbtn{background:transparent;border:1px solid transparent;color:var(--mut);padding:7px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.tbtn:hover{color:var(--txt);background:var(--panel2)}
+.tbtn.active{color:var(--gold2);border-color:var(--line);background:var(--panel)}
+.chip{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;border:1px solid var(--line);color:var(--mut);white-space:nowrap}
+.chip.ok{color:var(--ok);border-color:#1d5c39}.chip.warn{color:var(--warn);border-color:#6b5a10}.chip.bad{color:var(--bad);border-color:#6b2020}
+.chip.gold{color:var(--gold2);border-color:#6b5a10}
+main{max-width:1280px;margin:0 auto;padding:16px}
+.view{display:block}.view[hidden]{display:none}
+.toolbar{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:10px;display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.trow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sep{width:1px;height:24px;background:var(--line)}
+.spacer{flex:1}
+.btn{background:var(--panel2);border:1px solid var(--line);color:var(--txt);padding:8px 13px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600}
+.btn:hover{border-color:var(--gold);color:var(--gold2)}
+.btn.primary{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#191307;border-color:var(--gold)}
+.btn.primary:hover{filter:brightness(1.1);color:#191307}
+.btn.gold{background:transparent;border-color:var(--gold);color:var(--gold2)}
+.btn.danger{border-color:#5c2020;color:#ff8b8b}
+.btn.sm{padding:5px 9px;font-size:12px;width:100%}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.tog{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut);background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:5px 11px;cursor:pointer;user-select:none}
+.tog input{accent-color:var(--gold)}
+.tog.on{color:var(--gold2);border-color:var(--gold)}
+label.sel{font-size:12px;color:var(--mut);display:flex;gap:6px;align-items:center}
+select,input[type=text],input[type=password],input[type=number],input[type=email],textarea{background:#0f141c;border:1px solid var(--line);color:var(--txt);border-radius:7px;padding:7px 9px;font:inherit;font-size:13px}
+select:focus,input:focus,textarea:focus{outline:1px solid var(--gold);border-color:var(--gold)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tab{background:transparent;border:1px solid var(--line);color:var(--mut);padding:6px 12px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600}
+.tab.active{background:var(--gold);border-color:var(--gold);color:#191307}
+.counters{display:flex;gap:6px;flex-wrap:wrap}
+#dropzone{border:2px dashed var(--line);border-radius:var(--rad);padding:22px;text-align:center;color:var(--mut);margin-bottom:12px;transition:.15s;cursor:pointer;background:var(--panel)}
+#dropzone.hot{border-color:var(--gold);color:var(--gold2);background:#1a1a10}
+#items{display:flex;flex-direction:column;gap:10px}
+.row{display:grid;grid-template-columns:104px 1fr 138px;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:12px}
+.row.success{border-color:#1d5c39}.row.failed{border-color:#5c2020}.row.processing{border-color:var(--gold)}
+.thumb{position:relative;width:104px;height:104px;border-radius:8px;overflow:hidden;background:#0f141c url() center/contain no-repeat;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.thumb img{width:100%;height:100%;object-fit:contain;background:repeating-conic-gradient(#202836 0% 25%,#161d28 0% 50%) 0 0/16px 16px}
+.thumb .noimg{display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--mut);font-weight:700;font-size:15px}
+.thumb .noimg small{font-weight:400;font-size:10px;text-align:center;padding:0 4px}
+.thumb .mini{position:absolute;right:3px;bottom:3px;background:#0009;border:1px solid var(--line);color:var(--txt);border-radius:5px;cursor:pointer;font-size:11px;padding:1px 5px;margin-left:3px}
+.thumb .mini:first-of-type{right:30px}
+.mid{display:flex;flex-direction:column;gap:7px;min-width:0}
+.line1{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.line1 .fname{font-size:13px;word-break:break-all}
+.mut{color:var(--mut);font-size:11px}
+.err{color:#ff8b8b;font-size:12px;background:#2a1414;border:1px solid #5c2020;border-radius:6px;padding:4px 8px}
+.fld{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fld>span.lb{font-size:11px;color:var(--mut);width:74px;flex:none;text-transform:uppercase;letter-spacing:.4px}
+.in{flex:1;min-width:120px}
+textarea.in{resize:vertical;width:100%}
+.cnt{font-size:11px;color:var(--mut);flex:none}
+.cnt.over{color:var(--bad);font-weight:700}
+.kwbox{display:flex;flex-direction:column;gap:6px}
+.kws{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.kw{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:16px;font-size:12px;cursor:pointer;border:1px solid;user-select:none}
+.kw.ok{background:#12291c;border-color:#1d5c39;color:#7ee2a8}
+.kw.warn{background:#2b2510;border-color:#6b5a10;color:#f5d76e}
+.kw.bad{background:#2b1414;border-color:#6b2020;color:#ff9b9b}
+.kw b{cursor:pointer;font-weight:700;opacity:.7}
+.kw b:hover{opacity:1;color:var(--bad)}
+.kw .ti{font-size:9px;opacity:.6;text-transform:uppercase}
+.fnprev{font-size:11px;color:var(--gold2);background:#1a1a10;border:1px dashed #6b5a10;border-radius:6px;padding:3px 8px;word-break:break-all}
+details.checks{border:1px solid var(--line);border-radius:8px;padding:6px 9px;background:var(--panel2)}
+details.checks summary{cursor:pointer;font-size:12px;color:var(--mut);list-style:none;display:flex;gap:8px;align-items:center}
+details.checks summary::-webkit-details-marker{display:none}
+details.checks ul{margin:7px 0 2px 4px;list-style:none;display:flex;flex-direction:column;gap:3px}
+details.checks li{font-size:12px;color:var(--mut)}
+details.checks li.pass::before{content:"✅ "}.cqc-warn::before{content:"⚠️ "}.cqc-fail::before{content:"❌ "}
+details.checks li.warn{color:var(--warn)}details.checks li.fail{color:var(--bad)}
+.acts{display:flex;flex-direction:column;gap:6px}
+.gate{background:linear-gradient(180deg,#1c2431,#151b24);border:1px solid var(--gold);border-radius:var(--rad);padding:22px;text-align:center;margin-bottom:12px}
+.gate h2{font-family:Georgia,serif;color:var(--gold2);margin-bottom:6px}
+.gate p{color:var(--mut);margin-bottom:12px}
+.gate .grow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;align-items:center}
+.modal{position:fixed;inset:0;background:#000a;z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:4vh 14px;overflow:auto}
+.modal[hidden]{display:none}
+.mbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;max-width:860px;width:100%;padding:18px;position:relative}
+.mbox h3{font-family:Georgia,serif;color:var(--gold2);margin-bottom:10px}
+.mbox .x{position:absolute;top:10px;right:12px;background:transparent;border:none;color:var(--mut);font-size:20px;cursor:pointer}
+.mbox .x:hover{color:var(--bad)}
+.msec{margin-bottom:14px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--panel2)}
+.msec h4{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--gold2);margin-bottom:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:760px){.grid2,.grid3{grid-template-columns:1fr}.row{grid-template-columns:84px 1fr}.thumb{width:84px;height:84px}.acts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}.acts .btn{width:auto;flex:1}}
+.page{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:20px;margin-bottom:14px}
+.page h2{font-family:Georgia,serif;color:var(--gold2);margin-bottom:10px}
+.page p,.page li{color:var(--mut);margin-bottom:8px}
+.page ol,.page ul{margin-left:20px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:12px 0}
+.plan{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--panel2);display:flex;flex-direction:column;gap:6px}
+.plan.hot{border-color:var(--gold)}
+.plan .pn{font-weight:700;color:var(--txt)}
+.plan .pp{font-family:Georgia,serif;font-size:24px;color:var(--gold2)}
+.plan .pf{font-size:12px;color:var(--mut)}
+.paybox{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+.pay{border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--panel2)}
+.pay b{color:var(--gold2)}
+footer{position:fixed;bottom:0;left:0;right:0;background:#0a0e13;border-top:1px solid var(--line);padding:8px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--mut);z-index:40}
+footer b{color:var(--gold2)}
+#toast{position:fixed;bottom:52px;right:16px;z-index:200;display:flex;flex-direction:column;gap:8px}
+#toast div{background:var(--panel2);border:1px solid var(--gold);border-radius:8px;padding:9px 14px;font-size:13px;box-shadow:0 6px 22px #0008;animation:tin .18s ease-out}
+#toast div.bad{border-color:var(--bad)}#toast div.ok{border-color:var(--ok)}
+@keyframes tin{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+#prevImg{max-width:100%;max-height:70vh;border-radius:8px;background:repeating-conic-gradient(#202836 0% 25%,#161d28 0% 50%) 0 0/18px 18px;margin:0 auto;display:block}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--gold);border-top-color:transparent;border-radius:50%;animation:sp 0.8s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* ===== performance & feedback (added) ===== */
+html{color-scheme:dark}
+.row{content-visibility:auto;contain-intrinsic-size:auto 214px}
+.thumb img{image-rendering:auto}
+#items{contain:layout style}
+.tbtn,.btn,.tab,.kw{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+#pbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:300;background:transparent;pointer-events:none;opacity:0;transition:opacity .2s}
+#pbar.on{opacity:1}
+#pbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .18s ease-out;box-shadow:0 0 8px #c9a22799}
+#pmsg{position:fixed;top:6px;left:50%;transform:translateX(-50%);z-index:301;background:#0f141cdd;border:1px solid var(--gold);color:var(--gold2);border-radius:20px;padding:4px 14px;font-size:12px;display:none;max-width:92vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;backdrop-filter:blur(3px)}
+#pmsg.on{display:block}
+.skel{background:linear-gradient(90deg,#141b25 25%,#1d2634 37%,#141b25 63%);background-size:400% 100%;animation:sk 1.2s ease infinite}
+@keyframes sk{0%{background-position:100% 50%}100%{background-position:0 50%}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+</style>
+</head>
+<body>
+<div id="pbar"><i></i></div>
+<div id="pmsg"></div>
+<header>
+<img id="logo" alt="HS — Hridoy Sarkar logo" width="46" height="46" decoding="async">
+<div class="brand"><div class="b1">HS Stock <em>Metadata</em> Studio</div><div class="b2">Universal Stock SEO &amp; Metadata Workflow · EPS · AI · SVG · PNG · JPG · PSD · PDF · MP4</div></div>
+<nav>
+<button class="tbtn active" data-view="workspace">Workspace</button>
+<button class="tbtn" data-view="pricing">Pricing</button>
+<button class="tbtn" data-view="tutorials">Tutorials</button>
+<button class="tbtn" data-view="contact">Contact</button>
+<button class="tbtn" id="btnApi">🔑 API Keys</button>
+<button class="tbtn" id="btnSettings">⚙ Settings</button>
+<button class="tbtn" id="btnAdmin" style="display:none">🛡 Admin</button>
+</nav>
+<span id="licChip" class="chip"></span>
+</header>
+<main>
+<section id="view-workspace" class="view">
+<div id="gate" class="gate" hidden>
+<h2>License Required</h2>
+<p id="gateMsg">Activate your license or start the 3-day unlimited free trial to use the workspace.</p>
+<div class="grow">
+<button class="btn primary" id="btnTrial">🎁 Start 3-Day Free Trial</button>
+<input type="text" id="keyInput" placeholder="Paste license key (HS-....-....)" style="width:280px">
+<button class="btn gold" id="btnKey">Activate Key</button>
+<button class="btn" data-view="pricing">View Pricing</button>
+</div>
+</div>
+<div class="toolbar">
+<div class="trow">
+<button id="btnUpload" class="btn primary">+ Upload more</button>
+<button id="btnFolder" class="btn">📁 Upload folder</button>
+<button id="btnStart" class="btn gold">▶ Start Processing</button>
+<button id="btnStop" class="btn danger" hidden>⏹ Stop</button>
+<span class="sep"></span>
+<label class="tog" id="tgSingleW"><input type="checkbox" id="tgSingle"> Single keyword</label>
+<label class="tog" id="tgSilW"><input type="checkbox" id="tgSil"> Silhouette</label>
+<label class="tog" id="tgTransW"><input type="checkbox" id="tgTrans"> Transparent BG</label>
+<label class="tog" id="tgEmbedW"><input type="checkbox" id="tgEmbed"> Embed XMP</label>
+<span class="sep"></span>
+<label class="sel">Marketplace <select id="selMkt"></select></label>
+<label class="sel">AI Engine <select id="selProv"></select></label>
+</div>
+<div class="trow">
+<div class="tabs" id="tabs">
+<button class="tab active" data-f="all">All</button>
+<button class="tab" data-f="gen">Generated Data</button>
+<button class="tab" data-f="processing">PROCESSING</button>
+<button class="tab" data-f="success">SUCCESS</button>
+<button class="tab" data-f="failed">FAILED</button>
+</div>
+<select id="selFormat"><option value="">All formats</option></select>
+<span class="spacer"></span>
+<span class="counters" id="counters"></span>
+</div>
+<div class="trow">
+<button id="btnRenameAll" class="btn">✏ Rename All</button>
+<button id="btnDownloadAll" class="btn">⬇ Download All (EPS+JPG)</button>
+<button id="btnCsv" class="btn">📄 Download all CSV</button>
+<button id="btnClear" class="btn danger">🗑 Clear all</button>
+<span class="mut" id="mktHint"></span>
+</div>
+</div>
+<div id="dropzone">⬆ <b>Drag &amp; drop files or folders here</b> — EPS, AI, SVG, PNG, JPG, PSD, PDF, MP4 … unlimited files<br><span class="mut">EPS files are opened locally in your browser and their embedded preview is rendered so you can see the artwork with your own eyes before generating metadata.</span></div>
+<div id="items"></div>
+</section>
+<section id="view-pricing" class="view" hidden></section>
+<section id="view-tutorials" class="view" hidden></section>
+<section id="view-contact" class="view" hidden></section>
+</main>
+<footer>
+<span>Developed by <b>Md. Hridoy Sarkar</b></span>
+<span>✉ <a href="/cdn-cgi/l/email-protection#bcd4cf8c888b898c8efcdbd1ddd5d092dfd3d1"><span class="__cf_email__" data-cfemail="cfa7bcfffbf8fafffd8fa8a2aea6a3e1aca0a2">[email&#160;protected]</span></a></span>
+<span>📞 01746443525</span>
+<span class="spacer" style="flex:1"></span>
+<button class="tbtn" id="btnOwner" title="Owner access" style="padding:2px 8px;opacity:.5">🛡</button><span id="footLic"></span>
+</footer>
+<input type="file" id="fileInput" multiple hidden>
+<input type="file" id="folderInput" webkitdirectory directory hidden>
+<input type="file" id="manualInput" accept="image/*" hidden>
+<div class="modal" id="mApi" hidden><div class="mbox"><button class="x" data-close>×</button><h3>🔑 API Secrets Management</h3><div id="apiBody"></div></div></div>
+<div class="modal" id="mSettings" hidden><div class="mbox"><button class="x" data-close>×</button><h3>⚙ Settings &amp; Limits</h3><div id="setBody"></div></div></div>
+<div class="modal" id="mLogin" hidden><div class="mbox" style="max-width:420px"><button class="x" data-close>×</button><h3>🛡 Admin Login</h3><div id="loginBody"></div></div></div>
+<div class="modal" id="mAdmin" hidden><div class="mbox"><button class="x" data-close>×</button><h3>🛡 Admin Panel — Owner Only</h3><div id="adminBody"></div></div></div>
+<div class="modal" id="mPreview" hidden><div class="mbox"><button class="x" data-close>×</button><h3 id="prevTitle">Preview</h3><img id="prevImg" alt="preview"><p class="mut" id="prevInfo" style="margin-top:8px;text-align:center"></p></div></div>
+<div class="modal" id="mHandover" hidden><div class="mbox" style="max-width:600px"><button class="x" data-close>×</button><h3>📦 Buyer Access Box</h3><p class="mut" style="margin-bottom:10px">Ei box ta copy kore buyer ke WhatsApp / email e pathao — buyer paste kore "Activate Key" chaplei tool unlock hobe.</p><pre id="hvBox" style="background:#0f141c;border:1px solid var(--line);border-radius:8px;padding:12px;font:12.5px/1.55 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-all;color:var(--txt)"></pre><div class="trow" style="margin-top:10px"><button class="btn primary" id="hvCopy">📋 Copy full box</button><button class="btn" id="hvMail">📧 Mail to buyer</button></div></div></div>
+<div id="toast"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+'use strict';
+/* ============ UTILS ============ */
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const extOf=n=>{const p=String(n).split('.');return p.length>1?p.pop().toLowerCase():''};
+const slug=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+const fmtB=n=>n>1048576?(n/1048576).toFixed(1)+' MB':(n>1024?(n/1024).toFixed(0)+' KB':n+' B');
+const uid=()=>Math.random().toString(36).slice(2,10);
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function toast(msg,type){const t=$('#toast');const d=document.createElement('div');if(type)d.className=type;d.textContent=msg;t.appendChild(d);setTimeout(()=>{d.style.opacity='0';setTimeout(()=>d.remove(),300)},3800)}
+function fnv1a(s){let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0}return h>>>0}
+async function sha256(s){try{if(crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')}}catch(e){}return 'f'+fnv1a(s).toString(16)+fnv1a(s+'x').toString(16)}
+function b64urlEnc(s){return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function b64urlDec(s){s=String(s).replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(escape(atob(s)))}
+function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1500)}
+/* ============ TAXONOMY (controlled vocabulary) ============ */
+const TAXONOMY=[
+["Vector Graphics","Vector Illustration, Vector Artwork, Vector Elements, Vector Objects, Vector Shapes, Vector Background, Vector Pattern, Vector Ornament, Vector Decoration, Vector Symbol, Vector Graphic, Vector Scene, Vector Composition, Vector Set, Vector Collection, Vector Bundle"],
+["Vector Styles","Silhouette Vector, Line Art Vector, Outline Vector, Flat Vector, Solid Vector, Monoline Vector, Geometric Vector, Minimal Vector, Color Vector, Gradient Vector, Isometric Vector, Hand-Drawn Vector, Vintage Vector, Retro Vector, Abstract Vector, 3D Vector, Pattern Vector, Decorative Vector, Realistic Vector, Semi-Realistic Vector, Cartoon Vector, Sketch Vector, Doodle Vector, Iconic Vector, Technical Vector, Infographic Vector"],
+["Illustration","Digital Illustration, Editorial Illustration, Concept Illustration, Character Illustration, Decorative Illustration, Children's Illustration, Technical Illustration, Infographic Illustration, Editorial Artwork, Storytelling Illustration, Scene Illustration, Object Illustration, Botanical Illustration, Fashion Illustration, Food Illustration, Architectural Illustration, Scientific Illustration, Medical Illustration, Educational Illustration, Commercial Illustration"],
+["Illustration Styles","Hand-Drawn, Sketch, Doodle, Cartoon, Comic, Flat, Minimal, Realistic, Semi-Realistic, Cute, Whimsical, Vintage, Retro, Watercolor, Ink, Pencil, Gouache, Collage, Paper Cut, Isometric, 3D, Digital Painting, Acrylic, Oil Painting, Engraving, Woodcut, Etching, Pop Art, Surreal, Abstract"],
+["Raster / Image","Digital Image, Raster Image, Raster Graphic, Digital Artwork, PNG Asset, JPG Image, Transparent PNG, Image Element, Image Composition, Image Background, Image Overlay, Texture Image, Photo Manipulation, Composite Image, Image Effect, Stock Image, Digital Composite"],
+["Photography","Stock Photography, Product Photography, Portrait Photography, Lifestyle Photography, Business Photography, Food Photography, Nature Photography, Travel Photography, Architecture Photography, Fashion Photography, Event Photography, Still Life Photography, Editorial Photography, Commercial Photography, Advertising Photography, Automotive Photography, Sports Photography, Wildlife Photography, Macro Photography, Landscape Photography"],
+["Icons & Symbols","Icon Design, Icon Set, Symbol, Glyph, UI Icon, Web Icon, App Icon, Business Icon, Social Media Icon, Infographic Icon, Interface Symbol, Sign, Badge, Emblem, Pictogram, Navigation Icon, Tool Icon, Notification Icon, Button Icon, Feature Icon"],
+["Icon Styles","Outline, Filled, Line, Monoline, Duotone, Gradient, Flat, 3D, Pixel, Hand-Drawn, Solid, Minimal, Geometric, Isometric, Colorful, Rounded, Sharp, Abstract"],
+["Logo & Branding","Logo Design, Brand Mark, Wordmark, Lettermark, Monogram, Emblem, Combination Mark, Mascot Logo, Symbol Logo, Signature Logo, Badge Logo, Abstract Logo, Minimal Logo, Geometric Logo, Typography Logo, Icon Logo"],
+["Branding Assets","Brand Identity, Business Card, Letterhead, Brand Guidelines, Social Media Branding, Stationery, Brand Pattern, Brand Icon, Brand Mockup, Envelope Design, Brand Collateral, Corporate Identity, Visual Identity, Brand Style Guide"],
+["3D Graphics","3D Object, 3D Illustration, 3D Icon, 3D Character, 3D Scene, 3D Product, 3D Logo, 3D Typography, 3D Mockup, 3D Background, 3D Element, 3D Render, 3D Asset, 3D Model, 3D Environment"],
+["3D Styles","Realistic 3D, Stylized 3D, Low Poly, Isometric 3D, Clay 3D, Glossy 3D, Metallic 3D, Glass 3D, Soft 3D, Cartoon 3D, Plastic 3D, Chrome 3D, Holographic 3D, Liquid 3D, Inflatable 3D, Abstract 3D"],
+["Motion & Animation","Motion Graphic, 2D Animation, 3D Animation, Character Animation, Logo Animation, Text Animation, Explainer Animation, Infographic Animation, Animated Illustration, Animated Icon, Animated Background, Animated Element, GIF, Loop Animation, Motion Typography, Kinetic Typography, Visual Effects, Animated Logo"],
+["Video Assets","Stock Video, Video Background, Video Overlay, Motion Background, Video Element, Green Screen, Transition, Video Intro, Video Outro, B-Roll, Cinematic Footage, Social Media Video, Promotional Video, Explainer Video, Product Video, Commercial Video, Abstract Video, Nature Footage, Lifestyle Footage, Aerial Footage"],
+["Print Design","Poster, Flyer, Brochure, Business Card, Magazine, Catalog, Menu, Invitation, Greeting Card, Certificate, Calendar, Banner, Signage, Billboard, Label, Stationery, Packaging Print, Postcard, Book Cover, Magazine Cover, Newspaper Ad, Advertisement, Leaflet"],
+["Web & UI Design","Web Design, UI Design, UX Design, Landing Page, Website Template, Dashboard, Mobile App UI, Web Banner, Social Media Banner, Web Element, UI Kit, Design System, Wireframe, Prototype, Interface Component, Website Layout, App Interface, E-commerce UI, SaaS UI, Admin Panel, Navigation Design"],
+["Packaging & Product","Packaging Design, Product Label, Product Box, Bottle Packaging, Pouch Packaging, Food Packaging, Cosmetic Packaging, Pharmaceutical Packaging, Beverage Packaging, Retail Packaging, Product Mockup, Packaging Template, Product Branding, Carton Packaging, Jar Packaging, Tube Packaging, Can Packaging, Sachet Packaging, Wrapper Design, Product Label Design"],
+["Pattern & Decorative","Seamless Pattern, Surface Pattern, Decorative Pattern, Geometric Pattern, Floral Pattern, Abstract Pattern, Textile Pattern, Background Pattern, Ornament, Border, Frame, Decorative Element, Mandala, Motif, Repeat Pattern, Wallpaper Pattern, Botanical Pattern, Vintage Pattern, Retro Pattern, Islamic Pattern, Ethnic Pattern"],
+["Typography & Lettering","Typography, Lettering, Hand Lettering, Calligraphy, Word Art, Text Effect, 3D Typography, Decorative Typography, Logo Typography, Quote Design, Alphabet, Number Design, Monogram, Kinetic Typography, Display Typography, Custom Lettering, Script Lettering, Vintage Typography, Retro Typography"],
+["Backgrounds & Textures","Abstract Background, Gradient Background, Geometric Background, Minimal Background, Pattern Background, Texture, Paper Texture, Fabric Texture, Metal Texture, Wood Texture, Stone Texture, Grain Texture, Noise Texture, Watercolor Texture, Transparent Overlay, Light Effect, Shadow Effect, Blur Background, Bokeh Background, Liquid Background, Marble Background, Concrete Background"],
+["Infographics & Data","Infographic, Chart, Diagram, Graph, Timeline, Flowchart, Process Diagram, Business Infographic, Statistical Graphic, Data Visualization, Comparison Chart, Map Graphic, Information Graphic, Pie Chart, Bar Chart, Line Chart, Organizational Chart, Mind Map, Roadmap, Workflow Diagram"],
+["Templates","Presentation Template, Social Media Template, Instagram Template, Facebook Template, Flyer Template, Poster Template, Business Card Template, Brochure Template, Resume Template, Certificate Template, Invitation Template, Website Template, UI Template, Packaging Template, Mockup Template, Pitch Deck Template, Newsletter Template, Menu Template, Calendar Template, Catalog Template"],
+["Mockups","Branding Mockup, Logo Mockup, Packaging Mockup, Product Mockup, T-Shirt Mockup, Apparel Mockup, Stationery Mockup, Device Mockup, Website Mockup, Billboard Mockup, Book Mockup, Poster Mockup, Sign Mockup, Scene Mockup, Phone Mockup, Laptop Mockup, Tablet Mockup, Mug Mockup, Bottle Mockup, Box Mockup"],
+["Coloring & Craft","Coloring Page, Coloring Book, Line Drawing, Coloring Sheet, Printable Coloring, Kids Coloring, Adult Coloring, Activity Sheet, Craft Template, Cut File, Stencil, Paper Craft, SVG Craft, Cricut Design, Laser Cut Design, Printable Craft, DIY Template, Papercut Design"],
+["Silhouette & Line Art","Silhouette Vector, Object Silhouette, Character Silhouette, Animal Silhouette, Human Silhouette, Plant Silhouette, Vehicle Silhouette, Line Art, Continuous Line Art, Minimal Line Drawing, Outline Drawing, Coloring Line Art, Single Line Art, Detailed Line Art, Hand-Drawn Line Art, Botanical Line Art, Technical Line Art"],
+["Print-on-Demand","T-Shirt Design, Apparel Graphic, Hoodie Design, Mug Design, Poster Art, Sticker Design, Tote Bag Design, Phone Case Design, Wall Art, Typography Shirt, Graphic Quote, Vintage Print, Retro Print, Sweatshirt Design, Cap Design, Apparel Typography, Merchandise Design"]
+];
+const MASTER_STRUCTURE="Asset Type -> Design Type -> Style -> Subject -> Niche -> Theme -> Purpose -> Application -> Format -> Background -> Orientation -> Keywords";
+const VOCAB=new Set();TAXONOMY.forEach(g=>g[1].split(',').forEach(t=>{t=t.trim().toLowerCase();if(t)VOCAB.add(t)}));
+const CAT_NAMES=TAXONOMY.map(g=>g[0]);
+/* ============ MARKETPLACES ============ */
+const MKT={
+adobe:{label:'Adobe Stock',title:200,kw:49,kwMin:1,kwSep:', ',catSep:' / '},
+shutterstock:{label:'Shutterstock',title:200,kw:49,kwMin:3,kwSep:', ',catSep:' / '},
+dreamstime:{label:'Dreamstime',title:200,kw:40,kwMin:3,kwSep:', ',catSep:' / '},
+vectorstock:{label:'VectorStock',title:200,kw:40,kwMin:1,kwSep:', ',catSep:' / '},
+freepik:{label:'Freepik',title:100,kw:40,kwMin:3,kwSep:', ',catSep:' / '},
+vecteezy:{label:'Vecteezy',title:100,kw:40,kwMin:1,kwSep:', ',catSep:' / '},
+magnific:{label:'Magnific',title:100,kw:49,kwMin:1,kwSep:', ',catSep:' / '},
+generic:{label:'Generic / Custom',title:100,kw:49,kwMin:1,kwSep:', ',catSep:' / '}
+};
+/* ============ AI PROVIDERS ============ */
+const PROVIDERS={
+gemini:{label:'Gemini',type:'gemini',base:'https://generativelanguage.googleapis.com/v1beta/models/',models:['gemini-3.5-flash-lite','gemini-2.5-flash','gemini-3-flash-preview','gemini-3.1-flash-lite','gemini-2.5-flash-lite','gemini-flash-latest'],def:'gemini-3.5-flash-lite'},
+gaistudio:{label:'Google AI Studio',type:'gemini',base:'https://generativelanguage.googleapis.com/v1beta/models/',models:['gemini-3.5-flash-lite','gemini-2.5-flash','gemini-3-flash-preview','gemini-3.1-flash-lite','gemini-2.5-flash-lite','gemini-flash-latest'],def:'gemini-3.5-flash-lite'},
+grok:{label:'Grok (xAI)',type:'openai',base:'https://api.x.ai/v1/chat/completions',models:['grok-4','grok-4-fast','grok-2-vision-1212','grok-3'],def:'grok-4'},
+mistral:{label:'Mistral AI',type:'openai',base:'https://api.mistral.ai/v1/chat/completions',models:['pixtral-large-latest','pixtral-12b-2409','mistral-large-latest','mistral-medium-latest'],def:'pixtral-large-latest'},
+openai:{label:'OpenAI',type:'openai_responses',base:'https://api.openai.com/v1/responses',models:['gpt-5.6-luna','gpt-5.6-terra','gpt-5.6-sol'],def:'gpt-5.6-luna'}
+};
+/* ============ STATE ============ */
+const S={
+items:[],filter:'all',format:'',running:false,
+settings:Object.assign({titleMax:100,kwMax:49,descMax:300,mkt:'adobe',prov:'gemini',single:false,sil:false,trans:false,embed:true,gs:true,v:6,workers:1,rpm:20},LS.get('hs_settings',{})),
+keys:LS.get('hs_keys',{}),models:LS.get('hs_models',{})
+};
+const stats=LS.get('hs_stats',{gen:0,dl:0,csv:0,ren:0});
+function saveStats(){LS.set('hs_stats',stats)}
+const saveSettings=()=>LS.set('hs_settings',S.settings);
+if(S.settings.v!==6){S.settings.embed=true;S.settings.v=6;S.settings.workers=1;S.settings.rpm=20;saveSettings()} else {S.settings.workers=1}
+const MODEL_MIG={'gemini-flash-latest':'gemini-3.5-flash-lite','gemini-3.1-flash-lite-preview':'gemini-3.1-flash-lite','gemini-3.1-pro-preview':'gemini-2.5-flash','gemini-3-pro-preview':'gemini-3-flash-preview','gemini-2.5-pro':'gemini-2.5-flash','gemini-2.0-flash':'gemini-2.5-flash','gemini-1.5-flash':'gemini-2.5-flash','gemini-1.5-pro':'gemini-2.5-flash'};
+['gemini','gaistudio'].forEach(p=>{if(S.models[p]&&MODEL_MIG[S.models[p]])S.models[p]=MODEL_MIG[S.models[p]]});
+['gemini','gaistudio'].forEach(p=>{if(S.models[p]&&!PROVIDERS[p].models.includes(S.models[p]))S.models[p]=PROVIDERS[p].def});
+LS.set('hs_models',S.models);
+/* ============ PREVIEW ENGINE (EPS embedded TIFF/JPEG, %%BeginPreview, WMF, video frames) ============
+   Smoothness rules this engine follows:
+   1) Heavy binary decoding (TIFF/LZW, PackBits, WMF record parsing, raster decode) NEVER runs on the
+      UI thread — the exact same functions below are shipped into a Web Worker built at runtime.
+   2) Previews are object URLs (blob:), never multi-megabyte base64 data: strings glued into innerHTML.
+   3) Thumbnails show instantly; alpha/API-image details stream in afterwards, a few files at a time.
+   4) Every step has a timeout and a main-thread fallback, so nothing can freeze or hang forever.
+   ================================================================================================== */
+const PREVIEW_MAX=1600;               // preview kept for display + the companion .jpg
+const API_MAX=1024;                   // image handed to the vision model
+const NATIVE_READ_MAX=26214400;       // don't worker-decode rasters bigger than this
+const EPS_SCAN_MAX=8388608;           // how much of a headerless EPS we scan for a preview
+const NATIVE_IMG=['png','jpg','jpeg','webp','gif','bmp','avif'];
+const VECTOR_EPS=['eps','ai','ps'];
+const VIDEO_EXT=['mp4','webm','mov','m4v','mkv','avi'];
+const nextFrame=()=>new Promise(r=>{if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>r());else setTimeout(r,0)});
+const yieldUI=()=>new Promise(r=>setTimeout(r,0));
+
+/* ---- canvas helpers: identical behaviour in window scope and worker scope ---- */
+function mkCanvas(w,h){
+w=Math.max(1,Math.round(w||1));h=Math.max(1,Math.round(h||1));
+if(typeof document!=='undefined'&&document&&document.createElement){const c=document.createElement('canvas');c.width=w;c.height=h;return c}
+return new OffscreenCanvas(w,h);
+}
+function canvasCap(cv,max){
+if(!cv)return cv;
+const m=Math.max(cv.width,cv.height);
+if(m<=max)return cv;
+const k=max/m;const c2=mkCanvas(cv.width*k,cv.height*k);
+c2.getContext('2d').drawImage(cv,0,0,c2.width,c2.height);return c2;
+}
+function imgToCanvas(im){
+const cv=mkCanvas(im.naturalWidth||im.width||1024,im.naturalHeight||im.height||1024);
+cv.getContext('2d').drawImage(im,0,0);return cv;
+}
+function flattenWhite(cv){
+const out=mkCanvas(cv.width,cv.height);const x=out.getContext('2d');
+x.fillStyle='#ffffff';x.fillRect(0,0,out.width,out.height);x.drawImage(cv,0,0);return out;
+}
+function apiCanvas(cv){return canvasCap(flattenWhite(cv),1024)}
+function canvasToBlob(cv,type,q){
+if(!cv)return Promise.resolve(null);
+type=type||'image/png';
+/* OffscreenCanvas (worker scope) has convertToBlob(); HTMLCanvasElement has toBlob().
+   Both paths must work, otherwise previews silently come back empty. */
+if(typeof cv.convertToBlob==='function'){
+try{const p=cv.convertToBlob(q==null?{type:type}:{type:type,quality:q});return (p&&typeof p.then==='function')?p:Promise.resolve(null)}
+catch(e){return Promise.resolve(null)}
+}
+try{const p=cv.toBlob(type,q);if(p&&typeof p.then==='function')return p}catch(e){}
+return new Promise(res=>{try{cv.toBlob(b=>res(b),type,q)}catch(e){res(null)}});
+}
+function loadImg(url){return new Promise((res,rej)=>{const im=new Image();im.onload=()=>res(im);im.onerror=()=>rej(new Error('image load failed'));im.src=url})}
+async function decodeBlobToCanvas(blob,maxSide){
+if(!blob)return null;
+try{
+if(typeof createImageBitmap==='function'){
+const bmp=await createImageBitmap(blob);
+const cv=mkCanvas(bmp.width,bmp.height);cv.getContext('2d').drawImage(bmp,0,0);
+try{if(bmp.close)bmp.close()}catch(e){}
+return maxSide?canvasCap(cv,maxSide):cv;
+}
+}catch(e){}
+if(typeof Image!=='undefined'&&typeof URL!=='undefined'&&URL.createObjectURL){
+const url=URL.createObjectURL(blob);
+try{const im=await loadImg(url);const cv=imgToCanvas(im);return maxSide?canvasCap(cv,maxSide):cv}
+catch(e){return null}
+finally{try{URL.revokeObjectURL(url)}catch(e){}}
+}
+return null;
+}
+function alphaCheck(cv){
+try{
+const c=canvasCap(cv,400);const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;
+for(let i=3;i<d.length;i+=8){if(d[i]<250)return true}
+}catch(e){}
+return false;
+}
+
+/* ---- TIFF decoder (this is what most EPS/AI files embed as their preview) ---- */
+function tiffLZW(data){
+let out=[],bits=9,dict=[],prev=null,bitPos=0;
+function reset(){dict=[];for(let i=0;i<256;i++)dict.push([i]);dict.push(null);dict.push(null);bits=9;prev=null}
+reset();
+function read(){let code=0;for(let i=0;i<bits;i++){const by=bitPos>>3,bi=7-(bitPos&7);if(by>=data.length)return 257;code=(code<<1)|((data[by]>>bi)&1);bitPos++}return code}
+const maxOut=64000000;
+while(bitPos<data.length*8){
+const code=read();
+if(code===256){reset();continue}
+if(code===257)break;
+let entry;
+if(code<dict.length)entry=dict[code];
+else if(code===dict.length&&prev)entry=prev.concat([prev[0]]);
+else break;
+for(let i=0;i<entry.length;i++)out.push(entry[i]);
+if(out.length>maxOut)break;
+if(prev){dict.push(prev.concat([entry[0]]));if(dict.length>=(1<<bits)-1&&bits<12)bits++}
+prev=entry;
+}
+return new Uint8Array(out);
+}
+function packBits(data){
+const out=[];let i=0;
+while(i<data.length){let n=data[i];if(n<128){const c=n+1;for(let j=1;j<=c&&i+j<data.length;j++)out.push(data[i+j]);i+=1+c}else if(n>128){const c=257-n;const v=data[i+1];for(let j=0;j<c;j++)out.push(v);i+=2}else i++;}
+return new Uint8Array(out);
+}
+function tiffPredictor(buf,w,h,spp){
+for(let y=0;y<h;y++){const row=y*w*spp;for(let x=1;x<w;x++)for(let c=0;c<spp;c++)buf[row+x*spp+c]=(buf[row+x*spp+c]+buf[row+(x-1)*spp+c])&255}
+return buf;
+}
+function tiffToCanvas(b){
+try{
+const dv=new DataView(b.buffer,b.byteOffset,b.byteLength);
+const le=b[0]===0x49;if(dv.getUint16(2,le)!==42)return null;
+let ifd=dv.getUint32(4,le);const frames=[];
+while(ifd&&ifd>0&&ifd<b.length-2&&frames.length<10){
+const n=dv.getUint16(ifd,le);const tags={};
+if(n>4096)break;
+for(let i=0;i<n;i++){const e=ifd+2+i*12;if(e+12>b.length)break;tags[dv.getUint16(e,le)]={type:dv.getUint16(e+2,le),cnt:dv.getUint32(e+4,le),e:e+8}}
+frames.push(tags);ifd=dv.getUint32(ifd+2+n*12,le);
+}
+const TSZ=[0,1,1,2,4,8,1,1,2,4,8,4,8];
+function vals(t){
+if(!t)return null;const sz=TSZ[t.type]||1;const tot=sz*t.cnt;
+if(t.cnt>65536)t.cnt=65536;
+let off=t.e;
+if(tot>4)off=dv.getUint32(t.e,le);
+if(off<0||off>b.length)return null;
+const arr=[];
+for(let i=0;i<t.cnt;i++){
+switch(t.type){
+case 1:case 7:arr.push(b[off+i]);break;
+case 2:arr.push(b[off+i]);break;
+case 3:arr.push(dv.getUint16(off+i*2,le));break;
+case 4:arr.push(dv.getUint32(off+i*4,le));break;
+case 5:arr.push(dv.getUint32(off+i*8,le)/ (dv.getUint32(off+i*8+4,le)||1));break;
+default:arr.push(dv.getUint32(off+i*4,le));
+}
+}
+return arr;
+}
+for(const tg of frames){
+if(!tg[256]||!tg[257])continue;
+const wA=vals(tg[256]),hA=vals(tg[257]);
+if(!wA||!hA)continue;
+const w=wA[0],h=hA[0];
+if(!w||!h||w>20000||h>20000||w*h>40000000)continue;
+const bpsA=vals(tg[258])||[8],bps=bpsA[0];
+const spp=(vals(tg[277])||[1])[0];
+const comp=(vals(tg[259])||[1])[0];
+const photo=(vals(tg[262])||[1])[0];
+const pred=(vals(tg[317])||[1])[0];
+const offs=vals(tg[273])||vals(tg[324]);
+const cnts=vals(tg[279])||vals(tg[325]);
+if(!offs||!cnts)continue;
+if(comp===6||comp===7){
+const s0=offs[0],c0=cnts[0];
+if(s0>=0&&c0>0&&s0+c0<=b.length&&b[s0]===0xFF&&b[s0+1]===0xD8){return jpegBytesToCanvas(b.subarray(s0,s0+c0))}
+continue;
+}
+const chunks=[];let total=0;
+for(let i=0;i<offs.length&&i<cnts.length;i++){
+const st=b.subarray(offs[i],offs[i]+cnts[i]);
+let d;
+if(comp===1)d=new Uint8Array(st);
+else if(comp===32773)d=packBits(st);
+else if(comp===5)d=tiffLZW(st);
+else d=new Uint8Array(st);
+chunks.push(d);total+=d.length;
+if(total>200000000)break;
+}
+let raw=new Uint8Array(total),o=0;for(const c of chunks){raw.set(c,o);o+=c.length}
+if(pred===2&&bps===8)raw=tiffPredictor(raw,w,h,spp);
+const cmap=vals(tg[320]);
+const cv=mkCanvas(w,h);
+const ctx=cv.getContext('2d');if(!ctx)return null;
+const img=ctx.createImageData(w,h);const px=img.data;
+const rowBytes=Math.ceil(w*spp*bps/8);
+const rowBits=rowBytes*8;
+function gs(bit){
+if(bps===8||bps===16)return raw[bit>>3]||0;
+if(bps===4){const n=bit>>2;const by=raw[n>>1]||0;return (n&1)?(by&15):(by>>4)}
+if(bps===1){const by=raw[bit>>3]||0;return (by>>(7-(bit&7)))&1}
+return raw[bit>>3]||0;
+}
+const nc=cmap?Math.max(1,Math.floor(cmap.length/3)):0;
+for(let y=0;y<h;y++){
+const rowBit=y*rowBits;
+for(let x=0;x<w;x++){
+const di=(y*w+x)*4;
+const b0=rowBit+x*spp*bps;
+const s0=gs(b0),s1=spp>1?gs(b0+bps):0,s2=spp>2?gs(b0+2*bps):0,s3=spp>3?gs(b0+3*bps):0;
+let r=255,g=255,bl=255,a=spp===4?s3:255;
+if(photo===2){r=s0;g=s1;bl=s2}
+else if(photo===3&&cmap){const ci=Math.min(nc-1,s0);r=Math.round((cmap[ci]||0)/257);g=Math.round((cmap[nc+ci]||0)/257);bl=Math.round((cmap[2*nc+ci]||0)/257)}
+else if(photo===0){let v=s0;if(bps===1)v=v?0:255;else if(bps===4)v*=17;const g2=255-v;r=g2;g=g2;bl=g2}
+else if(photo===1){let v=s0;if(bps===1)v=v?255:0;else if(bps===4)v*=17;r=v;g=v;bl=v}
+else if(photo===5){const c=s0/255,m=s1/255,yy=s2/255,k=s3/255;r=255*(1-c)*(1-k);g=255*(1-m)*(1-k);bl=255*(1-yy)*(1-k)}
+else{r=s0;g=s0;bl=s0}
+px[di]=r;px[di+1]=g;px[di+2]=bl;px[di+3]=a;
+}
+}
+ctx.putImageData(img,0,0);return cv;
+}
+return null;
+}catch(e){return null}
+}
+function jpegBytesToCanvas(u8){return decodeBlobToCanvas(new Blob([u8],{type:'image/jpeg'}),0)}
+
+/* ---- generic embedded-preview hunter (used when the DOS EPS header is absent) ---- */
+async function findPreviewInBuf(u8){
+try{
+const n=u8.length;
+const SCAN=Math.min(n,12000000);
+for(let pass=0;pass<2;pass++){
+const m0=pass===0?0x49:0x4D,m1=pass===0?0x49:0x4D,m2=pass===0?0x2A:0x00,m3=pass===0?0x00:0x2A;
+let hits=0,i=u8.indexOf(m0,0);
+while(i>=0&&i+4<=SCAN&&hits<4){
+if(u8[i+1]===m1&&u8[i+2]===m2&&u8[i+3]===m3){
+hits++;
+try{const cv=await tiffToCanvas(u8.subarray(i));if(cv&&cv.getContext)return {kind:'tiff',canvas:cv}}catch(e){}
+}
+i=u8.indexOf(m0,i+2);
+}
+}
+let gi=0,i=u8.indexOf(0xFF,0);
+while(i>=0&&i+3<=SCAN&&gi++<6000){
+if(u8[i+1]===0xD8&&u8[i+2]===0xFF){
+let end=SCAN,j=u8.indexOf(0xFF,i+3),gj=0;
+while(j>=0&&j+1<SCAN&&gj++<200000){if(u8[j+1]===0xD9){end=j+2;break}j=u8.indexOf(0xFF,j+1)}
+try{const cv=await jpegBytesToCanvas(u8.subarray(i,end));if(cv&&cv.getContext)return {kind:'jpeg',canvas:cv}}catch(e){}
+i=end;
+}
+else i=u8.indexOf(0xFF,i+1);
+}
+if(n>=24){
+const isPlaceable=u8[0]===0xD7&&u8[1]===0xCD&&u8[2]===0xC6&&u8[3]===0x9A;
+if(isPlaceable){try{const pr=wmfParse(u8);if(pr&&pr.ops.length)return {kind:'wmf',data:u8,parsed:pr}}catch(e){}}
+else{const t0=u8[0]|(u8[1]<<8),h0=u8[2]|(u8[3]<<8);if((t0===1||t0===2)&&h0===9){try{const pr=wmfParse(u8);if(pr&&pr.ops.length)return {kind:'wmf',data:u8,parsed:pr}}catch(e){}}}
+let wmfHits=0,wi=u8.indexOf(0xD7,2);const scanMax=Math.min(n-40,6000000);
+while(wi>=0&&wi<scanMax&&wmfHits<6){
+if(u8[wi+1]===0xCD&&u8[wi+2]===0xC6&&u8[wi+3]===0x9A){
+wmfHits++;
+try{const sub=u8.subarray(wi);const pr=wmfParse(sub);if(pr&&pr.ops.length)return {kind:'wmf',data:sub,parsed:pr}}catch(e){}
+}
+wi=u8.indexOf(0xD7,wi+2);
+}
+}
+if(n>4&&u8[0]===0x25&&u8[1]===0x50&&u8[2]===0x44&&u8[3]===0x46)return {kind:'pdf'};
+}catch(e){}
+return null;
+}
+
+/* ---- WMF (Windows Metafile) renderer — EPS previews are often WMF ---- */
+function wmfColor(v){return 'rgb('+(v&255)+','+((v>>8)&255)+','+((v>>16)&255)+')'}
+function wmfDash(style){return ({1:[6,3],2:[2,2],3:[6,3,2,3],4:[6,3,2,3,2,3]})[style]||null}
+function dibToRGBA(dv,bitsOff,w,h,bitCount,biComp,palOff){
+const H=Math.abs(h);
+if(!w||!H||w>20000||H>20000)return null;
+if(biComp!==0&&!(biComp===3&&bitCount>=16))return null;
+const rowBytes=Math.ceil(w*bitCount/32)*4;
+const out=new Uint8ClampedArray(w*H*4);
+const up=h>0;
+for(let y=0;y<H;y++){
+const sy=up?(H-1-y):y;
+const row=bitsOff+sy*rowBytes;
+for(let x=0;x<w;x++){
+let r=255,g=255,b=255;
+if(bitCount===32){const o=row+x*4;b=dv.getUint8(o);g=dv.getUint8(o+1);r=dv.getUint8(o+2)}
+else if(bitCount===24){const o=row+x*3;b=dv.getUint8(o);g=dv.getUint8(o+1);r=dv.getUint8(o+2)}
+else{
+let idx;
+if(bitCount===8)idx=dv.getUint8(row+x);
+else if(bitCount===4)idx=(dv.getUint8(row+(x>>1))>>(x&1?0:4))&15;
+else if(bitCount===1)idx=(dv.getUint8(row+(x>>3))>>(7-(x&7)))&1;
+else return null;
+const po=palOff+idx*4;b=dv.getUint8(po);g=dv.getUint8(po+1);r=dv.getUint8(po+2);
+}
+const o=(y*w+x)*4;out[o]=r;out[o+1]=g;out[o+2]=b;out[o+3]=255;
+}}
+return {w:w,h:H,data:out};
+}
+function wmfParse(u8){
+try{
+const dv=new DataView(u8.buffer,u8.byteOffset,u8.byteLength);
+const n=u8.length;
+if(n<24)return null;
+let off=0;
+const okHdr=o=>{if(o<0||o+18>n)return false;const t=dv.getUint16(o,true),s=dv.getUint16(o+2,true),v=dv.getUint16(o+4,true);return (t===1||t===2)&&s===9&&(v===0x0100||v===0x0300)};
+if(dv.getUint32(0,true)===0x9AC6CDD7){
+off=22;                              /* standard 22-byte Aldus placeable header */
+if(!okHdr(off)&&okHdr(20))off=20;    /* a few writers omit the 2-byte HWmf field */
+}
+if(!okHdr(off))return null;
+off+=18;
+const objs=[];
+function objAdd(o){for(let k=0;k<objs.length;k++){if(!objs[k]){objs[k]=o;return k}}objs.push(o);return objs.length-1}
+let st={pen:{style:0,w:1,color:'#000'},brush:{style:0,color:'#fff',hatch:0},text:'#000',fontH:0,mm:1,wox:0,woy:0,wex:0,wey:0,vox:0,voy:0,vex:0,vey:0,fillMode:1};
+const stack=[];const ops=[];
+let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+function B(x,y){if(x<minX)minX=x;if(x>maxX)maxX=x;if(y<minY)minY=y;if(y>maxY)maxY=y}
+const UPT={2:254,3:2540,4:100,5:1000,6:1440};
+function SC(){
+let sx=1,sy=1;
+if(st.wex&&st.vex)sx=st.vex/st.wex;else if(!st.wex&&UPT[st.mm])sx=96/UPT[st.mm];
+if(st.wey&&st.vey)sy=st.vey/st.wey;else if(!st.wey&&UPT[st.mm])sy=-96/UPT[st.mm];
+return [sx,sy];
+}
+function T(x,y){const s=SC();return [(x-st.wox)*s[0]+st.vox,(y-st.woy)*s[1]+st.voy]}
+function penSnap(){const s=SC();return {stroke:st.pen.style!==5,sc:st.pen.color,sw:Math.max(1,st.pen.w*Math.abs(s[0])||1),dash:wmfDash(st.pen.style)}}
+function brushSnap(){return {fill:st.brush.style!==1,fc:st.brush.color,rule:st.fillMode===1?'evenodd':'nonzero'}}
+let cur=[0,0],eof=false,guard=0;
+while(!eof&&off+6<=n&&guard++<500000){
+const size=dv.getUint32(off,true);
+if(size<3)break;
+const end=off+size*2;
+if(end<=off||end>n)break;
+const fn=dv.getUint16(off+4,true);
+let p=off+6;
+const P16=()=>{const v=dv.getInt16(p,true);p+=2;return v};
+const U16=()=>{const v=dv.getUint16(p,true);p+=2;return v};
+const P32=()=>{const v=dv.getUint32(p,true);p+=4;return v};
+switch(fn){
+case 0x0000:eof=true;break;
+case 0x001E:stack.push(JSON.parse(JSON.stringify(st)));break;
+case 0x0127:if(stack.length)st=stack.pop();break;
+case 0x0103:st.mm=U16();break;
+case 0x0106:st.fillMode=U16();break;
+case 0x0209:st.text=wmfColor(P32());break;
+case 0x020B:{const y=P16(),x=P16();st.wox=x;st.woy=y}break;
+case 0x020C:{const y=P16(),x=P16();st.wex=x;st.wey=y}break;
+case 0x020D:{const y=P16(),x=P16();st.vox=x;st.voy=y}break;
+case 0x020E:{const y=P16(),x=P16();st.vex=x;st.vey=y}break;
+case 0x0214:{const y=P16(),x=P16();cur=T(x,y)}break;
+case 0x0213:{const y=P16(),x=P16();const q=T(x,y);const o=Object.assign({o:'line',p:cur.slice(),q:q},penSnap());B(o.p[0],o.p[1]);B(q[0],q[1]);ops.push(o);cur=q}break;
+case 0x0324:case 0x053A:case 0x0325:case 0x053B:{
+const c=U16();if(c<2||c>20000)break;
+const pts=[];for(let i=0;i<c;i++){const x=P16(),y=P16();const q=T(x,y);pts.push(q);B(q[0],q[1])}
+const o=(fn===0x0325||fn===0x053B)?Object.assign({o:'pline',pts:pts},penSnap()):Object.assign({o:'poly',pts:pts},penSnap(),brushSnap());
+ops.push(o)}break;
+case 0x0539:{
+const c=U16();if(c<4||c>30000)break;
+const pts=[];for(let i=0;i<c;i++){const x=P16(),y=P16();const q=T(x,y);pts.push(q);B(q[0],q[1])}
+ops.push(Object.assign({o:'bezier',pts:pts},penSnap()))}break;
+case 0x0538:{
+const np=U16();if(np<1||np>1000)break;
+const cnts=[];let tot=0;for(let i=0;i<np;i++){const c=U16();cnts.push(c);tot+=c}
+if(tot<2||tot>60000)break;
+for(let i=0;i<np;i++){
+const pts=[];for(let j=0;j<cnts[i];j++){const x=P16(),y=P16();const q=T(x,y);pts.push(q);B(q[0],q[1])}
+if(pts.length>=2)ops.push(Object.assign({o:'poly',pts:pts},penSnap(),brushSnap()));
+}}break;
+case 0x0418:case 0x041B:case 0x061C:{
+let rw=0,rh=0;
+if(fn===0x061C){rh=P16();rw=P16()}
+const b=P16(),r=P16(),t=P16(),l=P16();
+const A=T(l,t),C=T(r,b);
+const o=Object.assign({o:fn===0x0418?'ell':'rect',x1:Math.min(A[0],C[0]),y1:Math.min(A[1],C[1]),x2:Math.max(A[0],C[0]),y2:Math.max(A[1],C[1])},penSnap(),brushSnap());
+if(fn===0x061C){o.o='rrect';const s2=SC();o.rw=Math.abs(rw*(s2[0]||1));o.rh=Math.abs(rh*(s2[1]||1))}
+B(o.x1,o.y1);B(o.x2,o.y2);ops.push(o)}break;
+case 0x0817:case 0x081A:case 0x0830:{
+const y2=P16(),x2=P16(),y1=P16(),x1=P16(),b=P16(),r=P16(),t=P16(),l=P16();
+const A=T(l,t),C=T(r,b);
+const o={o:fn===0x0817?'arc':(fn===0x081A?'pie':'chord'),x1:Math.min(A[0],C[0]),y1:Math.min(A[1],C[1]),x2:Math.max(A[0],C[0]),y2:Math.max(A[1],C[1]),r1:T(x1,y1),r2:T(x2,y2)};
+Object.assign(o,penSnap());if(fn!==0x0817)Object.assign(o,brushSnap());
+B(o.x1,o.y1);B(o.x2,o.y2);ops.push(o)}break;
+case 0x0521:{
+const len=U16();if(len>4000)break;
+let s='';for(let i=0;i<len;i++)s+=String.fromCharCode(u8[p+i]);
+p+=len;if(len&1)p+=1;
+const y=P16(),x=P16();const q=T(x,y);const sc=SC();
+ops.push({o:'text',s:s,q:q,c:st.text,h:Math.abs(st.fontH*sc[1])||12});
+B(q[0],q[1]);B(q[0]+len*(Math.abs(st.fontH*sc[0])||12)*0.6,q[1])}break;
+case 0x0A32:{
+const y=P16(),x=P16();const len=U16();const opt=U16();
+if(opt&6)p+=8;
+if(len>4000)break;
+let s='';for(let i=0;i<len;i++)s+=String.fromCharCode(u8[p+i]);
+const q=T(x,y);const sc=SC();
+ops.push({o:'text',s:s,q:q,c:st.text,h:Math.abs(st.fontH*sc[1])||12});
+B(q[0],q[1])}break;
+case 0x041F:{const c=wmfColor(P32());const y=P16(),x=P16();const q=T(x,y);ops.push({o:'px',q:q,c:c});B(q[0],q[1])}break;
+case 0x02FA:{const style=U16();const w=P32();const color=P32();objAdd({pen:{style:style,w:Math.max(1,w&0xFFFF),color:wmfColor(color)}})}break;
+case 0x02FB:{const h=P16();objAdd({fontH:Math.abs(h)})}break;
+case 0x02FC:{const style=U16();const color=P32();const hatch=U16();objAdd({brush:{style:style,color:wmfColor(color),hatch:hatch}})}break;
+case 0x012D:{const i=U16();const ob=objs[i];if(ob){if(ob.pen)st.pen=ob.pen;if(ob.brush)st.brush=ob.brush;if(ob.fontH!==undefined)st.fontH=ob.fontH}}break;
+case 0x01F0:{const i=U16();objs[i]=null}break;
+case 0x0F43:{
+try{
+P32();U16();
+const hdr=p;
+const biSize=dv.getUint32(hdr,true);
+const w=dv.getInt32(hdr+4,true),h=dv.getInt32(hdr+8,true);
+const bit=dv.getUint16(hdr+14,true),comp=dv.getUint32(hdr+16,true);
+const palN=bit<=8?(1<<bit):0;
+const palOff=hdr+biSize+(comp===3?12:0);
+const bitsOff=palOff+palN*4;
+const rowBytes=Math.ceil(w*bit/32)*4;
+const bitsEnd=bitsOff+rowBytes*Math.abs(h);
+const img=dibToRGBA(dv,bitsOff,w,h,bit,comp,palOff);
+p=bitsEnd;
+P16();P16();P16();P16();
+const dh=P16(),dw=P16(),yd=P16(),xd=P16();
+if(img){
+const A=T(xd,yd),C=T(xd+(dw||img.w),yd+(dh||img.h));
+ops.push({o:'dib',img:img,x1:Math.min(A[0],C[0]),y1:Math.min(A[1],C[1]),x2:Math.max(A[0],C[0]),y2:Math.max(A[1],C[1])});
+B(A[0],A[1]);B(C[0],C[1]);
+}}catch(e){}
+}break;
+default:break;
+}
+off=end;
+}
+if(!ops.length||minX===Infinity)return null;
+const w=maxX-minX,h=maxY-minY;
+if(!(w>0.5)||!(h>0.5))return null;
+return {ops:ops,minX:minX,minY:minY,w:w,h:h};
+}catch(e){return null}
+}
+function wmfRender(pr,maxSide){
+if(!pr||!pr.ops)return null;
+try{
+maxSide=maxSide||1400;
+const k=Math.max(0.05,Math.min(maxSide/Math.max(pr.w,pr.h),8));
+const W=Math.max(2,Math.round(pr.w*k)),H=Math.max(2,Math.round(pr.h*k));
+const cv=mkCanvas(W,H);
+const c=cv.getContext('2d');if(!c||!c.beginPath)return null;
+c.fillStyle='#ffffff';c.fillRect(0,0,W,H);
+c.save();c.scale(k,k);c.translate(-pr.minX,-pr.minY);
+c.lineJoin='round';c.lineCap='round';
+const tmp=mkCanvas(1,1);const tc=(tmp.getContext&&tmp.getContext('2d'))||null;
+for(const op of pr.ops){
+try{
+switch(op.o){
+case 'line':{
+if(!op.stroke)break;
+c.strokeStyle=op.sc;c.lineWidth=Math.max(op.sw||1,0.4);c.setLineDash(op.dash||[]);
+c.beginPath();c.moveTo(op.p[0],op.p[1]);c.lineTo(op.q[0],op.q[1]);c.stroke();c.setLineDash([]);
+}break;
+case 'poly':case 'pline':{
+if(!op.pts||op.pts.length<2)break;
+c.beginPath();c.moveTo(op.pts[0][0],op.pts[0][1]);
+for(let i=1;i<op.pts.length;i++)c.lineTo(op.pts[i][0],op.pts[i][1]);
+if(op.o==='poly')c.closePath();
+if(op.o==='poly'&&op.fill){c.fillStyle=op.fc;c.fill(op.rule||'nonzero')}
+if(op.stroke){c.strokeStyle=op.sc;c.lineWidth=Math.max(op.sw||1,0.4);c.setLineDash(op.dash||[]);c.stroke();c.setLineDash([])}
+}break;
+case 'bezier':{
+if(!op.pts||op.pts.length<4)break;
+c.beginPath();c.moveTo(op.pts[0][0],op.pts[0][1]);
+for(let i=1;i+2<op.pts.length;i+=3)c.bezierCurveTo(op.pts[i][0],op.pts[i][1],op.pts[i+1][0],op.pts[i+1][1],op.pts[i+2][0],op.pts[i+2][1]);
+if(op.stroke){c.strokeStyle=op.sc;c.lineWidth=Math.max(op.sw||1,0.4);c.stroke()}
+}break;
+case 'rect':case 'rrect':{
+const x=op.x1,y=op.y1,w=op.x2-op.x1,h=op.y2-op.y1;
+c.beginPath();
+if(op.o==='rrect'&&c.roundRect){const rr=Math.max(1,Math.min(op.rw||0,op.rh||0,w,h)/2);c.roundRect(x,y,w,h,rr)}
+else c.rect(x,y,w,h);
+if(op.fill){c.fillStyle=op.fc;c.fill(op.rule||'nonzero')}
+if(op.stroke){c.strokeStyle=op.sc;c.lineWidth=Math.max(op.sw||1,0.4);c.setLineDash(op.dash||[]);c.stroke();c.setLineDash([])}
+}break;
+case 'ell':case 'arc':case 'pie':case 'chord':{
+const cx=(op.x1+op.x2)/2,cy=(op.y1+op.y2)/2;
+const rx=Math.max((op.x2-op.x1)/2,0.2),ry=Math.max((op.y2-op.y1)/2,0.2);
+let a1=0,a2=Math.PI*2;
+if(op.r1&&op.r2){
+a1=Math.atan2((op.r1[1]-cy)/ry,(op.r1[0]-cx)/rx);
+a2=Math.atan2((op.r2[1]-cy)/ry,(op.r2[0]-cx)/rx);
+}
+c.beginPath();
+if(op.o==='pie')c.moveTo(cx,cy);
+c.ellipse(cx,cy,rx,ry,0,a1,a2,false);
+if(op.o==='pie'||op.o==='chord')c.closePath();
+if((op.o==='ell'||op.o==='pie'||op.o==='chord')&&op.fill){c.fillStyle=op.fc;c.fill(op.rule||'nonzero')}
+if(op.stroke){c.strokeStyle=op.sc;c.lineWidth=Math.max(op.sw||1,0.4);c.setLineDash(op.dash||[]);c.stroke();c.setLineDash([])}
+}break;
+case 'text':{
+c.fillStyle=op.c||'#000';c.font=(op.h||12)+'px sans-serif';c.textBaseline='alphabetic';
+c.fillText(op.s||'',op.q[0],op.q[1]);
+}break;
+case 'px':{c.fillStyle=op.c;c.fillRect(op.q[0],op.q[1],1.5,1.5)}break;
+case 'dib':{
+if(!tc)break;
+tmp.width=op.img.w;tmp.height=op.img.h;
+const id=tc.createImageData(op.img.w,op.img.h);
+id.data.set(op.img.data);tc.putImageData(id,0,0);
+c.drawImage(tmp,op.x1,op.y1,Math.max(op.x2-op.x1,1),Math.max(op.y2-op.y1,1));
+}break;
+}
+}catch(e){}
+}
+c.restore();
+return cv;
+}catch(e){return null}
+}
+function wmfFromBytes(u8){try{const pr=wmfParse(u8);return pr?wmfRender(pr,1600):null}catch(e){return null}}
+
+/* ---- EPS header / %%BeginPreview reader ---- */
+function epsPreview(buf){
+const u8=buf instanceof Uint8Array?buf:new Uint8Array(buf);
+if(u8.length>32&&u8[0]===0xC5&&u8[1]===0xD0&&u8[2]===0xD3&&u8[3]===0xC6){
+const dv=new DataView(u8.buffer,u8.byteOffset,u8.byteLength);
+const mfOff=dv.getUint32(12,true),mfLen=dv.getUint32(16,true);
+const tOff=dv.getUint32(20,true),tLen=dv.getUint32(24,true);
+if(tLen>0&&tOff+tLen<=u8.length){return {kind:'tiff',data:u8.subarray(tOff,tOff+tLen)}}
+if(mfLen>0&&mfOff+mfLen<=u8.length)return {kind:'wmf',data:u8.subarray(mfOff,mfOff+mfLen)};
+if(mfLen>0)return {kind:'wmf'};
+return null;
+}
+try{
+const head=new TextDecoder('latin1').decode(u8.subarray(0,Math.min(u8.length,3000000)));
+const bi=head.indexOf('%%BeginPreview');
+if(bi>=0){
+const m=head.substr(bi,140).match(/%%BeginPreview:\s*(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/);
+if(m){
+const w=+m[1],h=+m[2];
+if(w>0&&h>0&&w*h<=25000000){
+const ei=head.indexOf('%%EndPreview',bi);
+const block=ei>bi?head.slice(bi,ei):head.slice(bi);
+const lines=block.split(/\r?\n/);
+let started=false;const hex=[];
+for(const ln of lines){
+if(!started){if(ln.indexOf('%%BeginPreview')===0)started=true;continue}
+if(ln.charCodeAt(0)!==37)continue;
+const clean=ln.slice(1).replace(/[^0-9a-fA-F]/g,'');
+if(clean)hex.push(clean);
+}
+const s=hex.join('');
+if(s.length>=w*h*2){
+const cv=mkCanvas(w,h);const ctx=cv.getContext('2d');if(!ctx)return null;
+const img=ctx.createImageData(w,h);const d=img.data;
+for(let i=0,p=0;i<w*h;i++,p+=2){const v=parseInt(s.substr(p,2),16);d[i*4]=v;d[i*4+1]=v;d[i*4+2]=v;d[i*4+3]=255}
+ctx.putImageData(img,0,0);return {kind:'canvas',canvas:cv};
+}
+}
+}
+}
+}catch(e){}
+return null;
+}
+
+/* ---- one asset -> one canvas (runs in the worker, or on the UI thread as a fallback) ---- */
+async function renderAssetPreview(buf,ext,hint){
+try{
+const u8=buf instanceof Uint8Array?buf:new Uint8Array(buf);
+if(NATIVE_IMG.indexOf(ext)>=0){
+const mime='image/'+(ext==='jpg'?'jpeg':ext);
+const cv=await decodeBlobToCanvas(new Blob([u8],{type:mime}),2400);
+if(!cv)return {src:'none'};
+const alpha=(ext==='png'||ext==='webp'||ext==='gif')?alphaCheck(cv):false;
+return {canvas:cv,src:'native',alpha:alpha};
+}
+if(VECTOR_EPS.indexOf(ext)>=0){
+let cv=null;
+if(hint==='tiff'){try{cv=await tiffToCanvas(u8)}catch(e){}}
+else if(hint==='wmf'){try{cv=wmfFromBytes(u8)}catch(e){}}
+if(cv&&cv.getContext)return {canvas:cv,src:'embedded'};
+let r=epsPreview(buf);
+if(r&&r.kind==='tiff'){const c2=await tiffToCanvas(r.data);r=(c2&&c2.getContext)?{kind:'canvas',canvas:c2}:null}
+if(r&&r.kind==='wmf'&&r.data){const c3=wmfFromBytes(r.data);r=(c3&&c3.getContext)?{kind:'canvas',canvas:c3}:{kind:'wmf'}}
+if(!r||!(r.kind==='canvas'&&r.canvas)){
+const s=await findPreviewInBuf(u8);
+if(s&&(s.kind==='tiff'||s.kind==='jpeg')){const c4=await s.canvas;r=(c4&&c4.getContext)?{kind:'canvas',canvas:c4}:null}
+else if(s&&s.kind==='wmf'){const c5=wmfFromBytes(s.data);r=(c5&&c5.getContext)?{kind:'canvas',canvas:c5}:{kind:'wmf'}}
+else if(s&&s.kind==='pdf')r={kind:'pdf'};
+}
+if(r&&r.kind==='canvas'&&r.canvas&&r.canvas.getContext)return {canvas:r.canvas,src:'embedded'};
+if(r&&r.kind==='wmf')return {src:'wmf'};
+if(r&&r.kind==='pdf')return {src:'pdf'};
+return {src:'none'};
+}
+return {src:'none'};
+}catch(e){return {src:'error',message:String(e&&e.message||e)}}
+}
+async function renderPreviewJob(buf,ext,hint,needPreview){
+const r=await renderAssetPreview(buf,ext,hint);
+if(!r||!r.canvas)return {ok:true,src:(r&&r.src)||'none',message:(r&&r.message)||'',alpha:(r&&r.alpha!==undefined&&r.alpha!==null)?r.alpha:null};
+const cv=r.canvas;
+const alpha=r.alpha===true;
+let previewBlob=null,apiBlob=null;
+try{if(needPreview!==false)previewBlob=await canvasToBlob(canvasCap(cv,1600),alpha?'image/png':'image/jpeg',0.9)}catch(e){}
+try{apiBlob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82)}catch(e){}
+return {ok:true,src:r.src,alpha:alpha,w:cv.width,h:cv.height,previewBlob:previewBlob,apiBlob:apiBlob};
+}
+function previewWorkerEntry(){
+self.onmessage=async function(e){
+const d=e.data||{};let out;
+try{out=await renderPreviewJob(d.buf,d.ext,d.hint,d.needPreview)}
+catch(err){out={ok:false,src:'error',message:String(err&&err.message||err)}}
+out.id=d.id;
+try{self.postMessage(out)}
+catch(e2){try{self.postMessage({id:d.id,ok:false,src:'error',message:'result could not be transferred'})}catch(e3){}}
+};
+}
+
+/* ---- worker pool (built from the very functions above, so there is only one implementation) ---- */
+const PV={pool:[],seq:0,broken:false,size:2,warned:false};
+function pvSource(){
+const prelude="'use strict';\nconst NATIVE_IMG="+JSON.stringify(NATIVE_IMG)+";\nconst VECTOR_EPS="+JSON.stringify(VECTOR_EPS)+";\n";
+const fns=[mkCanvas,canvasCap,imgToCanvas,flattenWhite,apiCanvas,canvasToBlob,loadImg,decodeBlobToCanvas,alphaCheck,
+tiffLZW,packBits,tiffPredictor,tiffToCanvas,jpegBytesToCanvas,findPreviewInBuf,
+wmfColor,wmfDash,dibToRGBA,wmfParse,wmfRender,wmfFromBytes,epsPreview,
+renderAssetPreview,renderPreviewJob,previewWorkerEntry];
+return prelude+fns.map(f=>f.toString()).join('\n\n')+'\n\ntry{previewWorkerEntry()}catch(e){try{self.postMessage({fatal:String(e&&e.message||e)})}catch(e2){}}\n';
+}
+function pvFail(msg){
+if(PV.broken)return;
+PV.broken=true;
+const pending=[];
+for(const w of PV.pool){w.map.forEach(fn=>pending.push(fn));w.map.clear();try{w.terminate()}catch(e){}}
+PV.pool.length=0;
+if(!PV.warned){PV.warned=true;console.warn('Preview worker unavailable ('+msg+') — decoding on the main thread instead.')}
+pending.forEach(fn=>{try{fn({workerLost:true})}catch(e){}});
+}
+function pvWorker(){
+if(PV.broken)return null;
+if(typeof Worker==='undefined'||typeof OffscreenCanvas==='undefined'||typeof createImageBitmap==='undefined'||typeof Blob==='undefined'){pvFail('no Worker/OffscreenCanvas support');return null}
+if(!PV.pool.length){
+let url='';
+try{url=URL.createObjectURL(new Blob([pvSource()],{type:'text/javascript'}))}catch(e){pvFail('blob url failed');return null}
+for(let i=0;i<PV.size;i++){
+try{
+const w=new Worker(url);
+w.busy=0;w.map=new Map();
+w.onmessage=ev=>{
+const d=ev.data||{};
+if(d.fatal){pvFail(d.fatal);return}
+const fn=w.map.get(d.id);if(!fn)return;
+w.map.delete(d.id);w.busy--;fn(d);
+};
+w.onerror=()=>pvFail('worker runtime error');
+PV.pool.push(w);
+}catch(e){pvFail('worker constructor failed');break}
+}
+try{URL.revokeObjectURL(url)}catch(e){}
+if(!PV.pool.length)return null;
+}
+let best=null;
+for(const w of PV.pool){if(!best||w.busy<best.busy)best=w}
+return best;
+}
+async function pvDecodeMain(buf,ext,hint,needPreview){
+await yieldUI();
+const r=await renderPreviewJob(buf,ext,hint,needPreview);
+await yieldUI();
+return r;
+}
+function pvDecode(buf,ext,hint,needPreview,timeoutMs){
+const w=pvWorker();
+if(!w)return pvDecodeMain(buf,ext,hint,needPreview);
+const id=++PV.seq;
+return new Promise((resolve,reject)=>{
+let done=false;
+const to=setTimeout(()=>{
+if(done)return;
+const fn=w.map.get(id);
+if(fn){w.map.delete(id);w.busy--;done=true;pvDecodeMain(buf,ext,hint,needPreview).then(resolve,reject)}
+},timeoutMs||90000);
+w.map.set(id,d=>{
+if(done)return;
+clearTimeout(to);done=true;
+if(d&&d.workerLost){pvDecodeMain(buf,ext,hint,needPreview).then(resolve,reject);return}
+resolve(d);
+});
+w.busy++;
+try{w.postMessage({id:id,ext:ext,hint:hint,needPreview:needPreview,buf:buf},buf instanceof ArrayBuffer?[buf]:[])}
+catch(e){
+clearTimeout(to);w.map.delete(id);w.busy--;done=true;
+pvDecodeMain(buf,ext,hint,needPreview).then(resolve,reject);
+}
+});
+}
+
+/* ---- PURE EPS FALLBACK (lazy Ghostscript WASM) ----
+   Only for vector EPS/AI files that carry no embedded preview at all. The 16 MB engine is fetched
+   once, in the background, after every fast preview is already on screen, and it can be turned off. */
+let _gsPromise=null,_gsSeq=0,_gsFailed=false;
+async function gsEngine(){
+if(_gsFailed)throw new Error('EPS render engine unavailable');
+if(!_gsPromise){
+_gsPromise=(async()=>{
+const mod=await Promise.race([
+import('https://cdn.jsdelivr.net/npm/ghostscript-wasm-esm@1.0.1/gs.mjs'),
+new Promise((_,rej)=>setTimeout(()=>rej(new Error('EPS engine download timed out')),180000))
+]);
+const init=mod.default||mod;
+if(typeof init!=='function')throw new Error('Ghostscript module initializer not found');
+return await init({locateFile:(file)=>'https://cdn.jsdelivr.net/npm/ghostscript-wasm-esm@1.0.1/'+file});
+})().catch(e=>{_gsPromise=null;_gsFailed=true;throw e});
+}
+return await _gsPromise;
+}
+async function ghostscriptEPS(buf){
+const gs=await gsEngine();
+const id='eps_'+(++_gsSeq);
+const inFile='/'+id+'.eps';
+const outFile='/'+id+'.png';
+try{
+gs.FS.writeFile(inFile,new Uint8Array(buf));
+const rc=await gs.callMain([
+'-dSAFER','-dBATCH','-dNOPAUSE','-dQUIET',
+'-sDEVICE=png16m','-r110','-dEPSCrop',
+'-sOutputFile='+outFile,inFile
+]);
+if(rc!==0)throw new Error('Ghostscript returned exit code '+rc);
+const out=gs.FS.readFile(outFile);
+const blob=new Blob([out],{type:'image/png'});
+const cv=await decodeBlobToCanvas(blob,2000);
+return cv;
+}finally{
+try{gs.FS.unlink(inFile)}catch(e){}
+try{gs.FS.unlink(outFile)}catch(e){}
+}
+}
+async function ghostscriptEPSWithTimeout(buf,ms){
+ms=ms||30000;
+let timer;
+try{
+return await Promise.race([
+ghostscriptEPS(buf),
+new Promise((_,rej)=>timer=setTimeout(()=>rej(new Error('Pure EPS renderer timed out')),ms))
+]);
+}finally{clearTimeout(timer)}
+}
+
+/* ---- video first-frame grab (needs a <video> element, so it stays on the UI thread) ---- */
+function videoFrame(file){
+return new Promise(res=>{
+let url='';
+try{url=URL.createObjectURL(file)}catch(e){res(null);return}
+const v=document.createElement('video');
+v.muted=true;v.playsInline=true;v.preload='metadata';v.crossOrigin='anonymous';
+let settled=false;
+const done=cv=>{if(settled)return;settled=true;clearTimeout(to);try{URL.revokeObjectURL(url)}catch(e){}res(cv)};
+const to=setTimeout(()=>done(null),9000);
+v.onloadeddata=()=>{try{v.currentTime=Math.min(0.5,(v.duration||1)/2)}catch(e){grab()}};
+v.onseeked=grab;
+v.onerror=()=>done(null);
+function grab(){
+try{
+const cv=mkCanvas(v.videoWidth||640,v.videoHeight||360);
+cv.getContext('2d').drawImage(v,0,0);done(cv);
+}catch(e){done(null)}
+}
+v.src=url;
+});
+}
+
+/* ============ ZIP (store) writer ============ */
+const CRC_T=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c}return t})();
+function crc32(u8){let c=0xFFFFFFFF;for(let i=0;i<u8.length;i++)c=CRC_T[(c^u8[i])&255]^(c>>>8);return (c^0xFFFFFFFF)>>>0}
+function zipStore(files){
+const enc=new TextEncoder();const chunks=[];const central=[];let offset=0;
+for(const f of files){
+const name=enc.encode(f.name);const data=f.data;const crc=crc32(data);
+const lh=new Uint8Array(30+name.length);const lv=new DataView(lh.buffer);
+lv.setUint32(0,0x04034b50,true);lv.setUint16(4,20,true);lv.setUint16(6,0,true);lv.setUint16(8,0,true);lv.setUint16(10,0,true);lv.setUint16(12,0,true);
+lv.setUint32(14,crc,true);lv.setUint32(18,data.length,true);lv.setUint32(22,data.length,true);lv.setUint16(26,name.length,true);lv.setUint16(28,0,true);
+lh.set(name,30);
+chunks.push(lh,data);
+const ch=new Uint8Array(46+name.length);const cvv=new DataView(ch.buffer);
+cvv.setUint32(0,0x02014b50,true);cvv.setUint16(4,20,true);cvv.setUint16(6,20,true);cvv.setUint16(8,0,true);cvv.setUint16(10,0,true);cvv.setUint16(12,0,true);cvv.setUint16(14,0,true);
+cvv.setUint32(16,crc,true);cvv.setUint32(20,data.length,true);cvv.setUint32(24,data.length,true);cvv.setUint16(28,name.length,true);
+cvv.setUint32(42,offset,true);
+ch.set(name,46);
+central.push(ch);
+offset+=lh.length+data.length;
+}
+let cdSize=0;central.forEach(c=>cdSize+=c.length);
+const eocd=new Uint8Array(22);const ev=new DataView(eocd.buffer);
+ev.setUint32(0,0x06054b50,true);ev.setUint16(8,files.length,true);ev.setUint16(10,files.length,true);ev.setUint32(12,cdSize,true);ev.setUint32(16,offset,true);
+return new Blob([...chunks,...central,eocd],{type:'application/zip'});
+}
+/* ============ XMP metadata embedding ============ */
+function buildXMP(m){
+const kws=(m.keywords||[]).map(k=>k.w);
+const e=esc;
+return '<?xpacket begin="\uFEFF" id="W5M0MpCehiHzreSzNTczkc9d"?>\n'+
+'<x:xmpmeta xmlns:x="adobe:ns:meta/">\n<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\n'+
+'<rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/">\n'+
+'<dc:title><rdf:Alt><rdf:li xml:lang="x-default">'+e(m.title)+'</rdf:li></rdf:Alt></dc:title>\n'+
+'<dc:description><rdf:Alt><rdf:li xml:lang="x-default">'+e(m.description)+'</rdf:li></rdf:Alt></dc:description>\n'+
+'<dc:subject><rdf:Seq>'+kws.map(k=>'<rdf:li>'+e(k)+'</rdf:li>').join('')+'</rdf:Seq></dc:subject>\n'+
+'<pdf:Keywords>'+e(kws.join(', '))+'</pdf:Keywords>\n'+
+'<photoshop:Category>'+e(m.catP||'')+'</photoshop:Category>\n'+
+'<xmp:CreatorTool>HS Stock Metadata Studio</xmp:CreatorTool>\n'+
+'</rdf:Description>\n</rdf:RDF>\n</x:xmpmeta>\n<?xpacket end="w"?>';
+}
+function jpegEmbedXMP(u8,xmp){
+if(!(u8[0]===0xFF&&u8[1]===0xD8))return u8;
+const xp=new TextEncoder().encode(xmp);const ns=new TextEncoder().encode('http://ns.adobe.com/xap/1.0/\0');
+const seg=new Uint8Array(4+ns.length+xp.length);
+const dv=new DataView(seg.buffer);
+dv.setUint16(0,0xFFE1,false);dv.setUint16(2,ns.length+xp.length+2+2-2,false);
+seg.set(ns,4);seg.set(xp,4+ns.length);
+const out=new Uint8Array(u8.length+seg.length);
+out.set(u8.subarray(0,2),0);out.set(seg,2);out.set(u8.subarray(2),2+seg.length);
+return out;
+}
+function epsEmbedXMP(u8,xmp){
+let s=new TextDecoder('latin1').decode(u8);
+const block='%%BeginXMPPacket\n'+xmp.split('\n').map(l=>'% '+l).join('\n')+'\n%%EndXMPPacket\n';
+const i=s.lastIndexOf('%%EOF');
+if(i>=0)s=s.slice(0,i)+block+s.slice(i);else s=s+'\n'+block;
+const out=new Uint8Array(s.length);
+for(let j=0;j<s.length;j++)out[j]=s.charCodeAt(j)&255;
+return out;
+}
+/* ============ CSV export ============ */
+function csvCell(s){s=String(s==null?'':s);return /[",\n\r]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s}
+function buildCSV(list,mktId){
+const mkt=MKT[mktId]||MKT.generic;
+const rows=[['File name','Title','Description','Keywords','Category']];
+for(const it of list){
+if(!it.meta)continue;
+const base=it.outName||(slug(it.meta.title)||slug(it.name))+'.'+it.ext;
+const kws=it.meta.keywords.map(k=>k.w).join(mkt.kwSep);
+const cat=(it.meta.catP||'')+(it.meta.catS?mkt.catSep+it.meta.catS:'');
+rows.push([base,it.meta.title,it.meta.description,kws,cat]);
+}
+return '\uFEFF'+rows.map(r=>r.map(csvCell).join(',')).join('\r\n');
+}
+/* ============ AI ENGINE ============ */
+const SYS_PROMPT='You are a senior stock-agency metadata specialist (Adobe Stock, Shutterstock, Dreamstime, VectorStock, Freepik, Vecteezy, Magnific). You analyze one uploaded asset and produce PERFECT, accurate, marketplace-safe SEO metadata. HARD RULES: (1) Describe ONLY what is visibly present in the supplied visual image — NEVER use the filename as a source of meaning and never invent objects, colors, concepts or subjects that are not visibly supported. (2) No keyword stuffing, no irrelevant keywords, no trademark/brand names, no promotional claims (best, cheap, buy...). (3) Silhouette/Line art/Outline are STYLES; animal/human/plant/vehicle etc. are SUBJECTS — keep them separate. (4) Title formula: Primary Subject + Important Detail + Style/Type + Purpose. Natural, descriptive, searchable English. NO hyphens or dashes in the title. (5) Description: 1-2 natural sentences, no keyword spam. (6) Keywords: 20-30 items, prioritized: 1-7 core subject, 8-13 style, 14-18 concept, 19-22 usage, 23-25 composition/technical. Lowercase, singular preferred, no duplicates. (7) Use the controlled vocabulary lists provided when they fit. (8) NEVER produce template/generic metadata: study THIS exact design and name its concrete visible elements — shapes, their arrangement and count, colors/gradients, composition (for example "concentric rainbow semicircle arch made of layered color bands"). Filler like "abstract smooth curve vector graphic illustration" alone is forbidden; two different designs must never receive the same title or keyword set. Return ONLY valid JSON with this exact schema: {"asset_type":"","design_type":"","style":[],"subject":"","objects":[],"concept":[],"colors":[],"composition":"","background":"","orientation":"","purpose":[],"title":"","description":"","keywords":[{"w":"","tier":"core|style|concept|usage|technical","conf":"high|medium|low"}],"category_primary":"","category_secondary":""}';
+function buildPrompt(it){
+ const st=S.settings, mkt=(MKT[st.mkt]||MKT.generic).label;
+ const facts=[];
+ facts.push('FORMAT: .'+it.ext+' | MARKETPLACE: '+mkt);
+ facts.push('VISUAL INPUT: '+(it.hasVisual?'available':'unavailable'));
+ if(it.alpha===true)facts.push('TRANSPARENCY: true');
+ if(it.alpha===false)facts.push('TRANSPARENCY: false');
+ facts.push('RULE: the IMAGE is the ONLY semantic source. Ignore the filename completely. Describe only visible subjects, shapes, objects, colors, arrangement and style. Never infer meaning from the filename.');
+ facts.push('TITLE: natural searchable English, primary visible subject + distinctive visible detail + design/style/type + useful purpose. No hyphens/dashes.');
+ facts.push('DESCRIPTION: one concise natural sentence describing the exact artwork.');
+ facts.push('KEYWORDS: exactly '+Math.min(st.kwMax,25)+' strong, relevant terms when supported; prioritize exact subject/detail first, then style, concept, use, composition. Lowercase, no duplicates, no brands, no spam.');
+ facts.push('CATEGORY: choose the closest category supported by the artwork.');
+ facts.push('Return ONLY JSON: {asset_type,design_type,style[],subject,objects[],concept[],colors[],composition,background,orientation,purpose[],title,description,keywords:[{w,tier,conf}],category_primary,category_secondary}');
+ return facts.join('\n');
+}
+function techFocus(ext){
+if(['eps','ai','svg'].includes(ext))return 'vector + editable + illustration + design type + subject';
+if(['png','jpg','jpeg','webp'].includes(ext))return 'subject + visual style + concept + use';
+if(ext==='psd')return 'editable + layered + template + design purpose';
+if(ext==='pdf')return 'print + document type + layout + purpose';
+if(['mp4','mov','webm','m4v'].includes(ext))return 'subject + action + scene + location + mood + footage type';
+return 'subject + style + concept + use';
+}
+async function callAI(provId,key,model,prompt,dataUrl){
+const P=PROVIDERS[provId];
+if(!P)throw new Error('Unknown provider');
+const ctrl=new AbortController();const timer=setTimeout(()=>ctrl.abort(),8800);
+try{
+if(P.type==='openai_responses'){
+  const content=[{type:'input_text',text:SYS_PROMPT+'\n\n---\n\n'+prompt}];
+  if(dataUrl)content.push({type:'input_image',image_url:dataUrl,detail:'high'});
+  const body={model:model,input:[{role:'user',content}],max_output_tokens:1800};
+  const res=await fetch(P.base,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},body:JSON.stringify(body),signal:ctrl.signal});
+  const j=await res.json().catch(()=>({}));
+  if(!res.ok)throw new Error((j.error&&j.error.message)||('OpenAI HTTP '+res.status));
+  let txt=String(j.output_text||'');
+  if(!txt&&Array.isArray(j.output)){
+    txt=j.output.flatMap(o=>Array.isArray(o.content)?o.content:[]).map(c=>c.text||'').join('');
+  }
+  if(!txt)throw new Error('OpenAI returned an empty response');
+  return txt;
+}
+if(P.type==='gemini'){
+const parts=[{text:SYS_PROMPT+'\n\n---\n\n'+prompt}];
+if(dataUrl){const mm=dataUrl.match(/^data:([^;]+);base64,(.+)$/);if(mm)parts.push({inline_data:{mime_type:mm[1],data:mm[2]}})}
+const gemUrl=P.base+model+':generateContent?key='+encodeURIComponent(key);
+const gemBody=cfg=>JSON.stringify({contents:[{parts:parts}],generationConfig:cfg});
+let res=await fetch(gemUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:gemBody({temperature:0.1,maxOutputTokens:1800,thinkingConfig:{thinkingBudget:0}}),signal:ctrl.signal});
+if(res.status===400){const t400=await res.clone().text();if(/thinking/i.test(t400))res=await fetch(gemUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:gemBody({temperature:0.1,maxOutputTokens:1800}),signal:ctrl.signal})}
+const j=await res.json().catch(()=>({}));
+if(!res.ok)throw new Error((j.error&&j.error.message)||('Gemini HTTP '+res.status));
+const cand=j.candidates&&j.candidates[0];
+const fin=(cand&&cand.finishReason)||'';
+const txt=(cand&&cand.content&&cand.content.parts||[]).map(p=>p.text||'').join('');
+if(!txt){
+if(dataUrl&&/SAFETY|BLOCK|PROHIBITED|RECITATION|SPII/i.test(fin))return callAI(provId,key,model,prompt,null);
+throw new Error(fin?('Gemini blocked the response ('+fin+')'):'Empty response from model');
+}
+return txt;
+}
+const content=[{type:'text',text:SYS_PROMPT+'\n\n---\n\n'+prompt}];
+if(dataUrl)content.push({type:'image_url',image_url:{url:dataUrl}});
+const res=await fetch(P.base,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},body:JSON.stringify({model:model,messages:[{role:'user',content:content}],temperature:0.1,max_tokens:1800}),signal:ctrl.signal});
+const j=await res.json().catch(()=>({}));
+if(!res.ok)throw new Error((j.error&&j.error.message)||('HTTP '+res.status));
+const ch=j.choices&&j.choices[0];
+const txt=(ch&&ch.message&&ch.message.content)||'';
+if(!txt){
+if(dataUrl&&ch&&/content_filter|safety|blocked/i.test(ch.finish_reason||''))return callAI(provId,key,model,prompt,null);
+throw new Error('Empty response from model');
+}
+return txt;
+}finally{clearTimeout(timer)}
+}
+function parseJSONLenient(txt){
+try{return parseJSON(txt)}catch(e){}
+let s=String(txt).replace(/```/g,' ');
+const a=s.indexOf('{'),b=s.lastIndexOf('}');
+if(a<0||b<0)throw new Error('No JSON in model response');
+s=s.slice(a,b+1).replace(/,\s*([}\]])/g,'$1');
+try{return JSON.parse(s)}catch(e){}
+let depth=0,end=-1;
+for(let i=0;i<s.length;i++){const ch=s[i];if(ch==='{')depth++;else if(ch==='}'){depth--;if(depth===0){end=i;break}}}
+if(end>0){try{return JSON.parse(s.slice(0,end+1).replace(/,\s*([}\]])/g,'$1'))}catch(e){}}
+throw new Error('Model returned invalid JSON');
+}
+function parseJSON(txt){
+let t=String(txt).trim();
+t=t.replace(/^```(?:json)?/i,'').replace(/```$/,'').trim();
+const a=t.indexOf('{'),b=t.lastIndexOf('}');
+if(a<0||b<0)throw new Error('No JSON object in model response');
+return JSON.parse(t.slice(a,b+1));
+}
+/* ============ METADATA POST-PROCESSING + CHECKS ============ */
+const STOP=new Set(['a','an','the','for','with','on','of','and','or','to','in','at','by','is','are','it','its']);
+const BRANDS=/\b(nike|adidas|disney|barbie|coca[- ]?cola|pepsi|marvel|pokemon|pikachu|ferrari|lamborghini|mercedes|bmw|iphone|ipad|playstation|xbox|lego|hello kitty|mickey|batman|superman|star wars|minecraft|gucci|chanel|rolex)\b/i;
+const CLAIMS=/\b(best|cheap|cheapest|buy|sale|discount|free download|top quality|premium quality|number one|#1)\b/i;
+const SEASONAL=/\b(christmas|xmas|halloween|easter|valentine|ramadan|eid|diwali|new year|thanksgiving|hanukkah)\b/i;
+function cleanTitle(t,max){
+let s=String(t||'').replace(/[-–—_]/g,' ').replace(/\s+/g,' ').trim();
+s=s.replace(/[!?]+$/g,'');
+if(s.length>max){s=s.slice(0,max+1);const i=s.lastIndexOf(' ');if(i>40)s=s.slice(0,i);else s=s.slice(0,max);s=s.trim()}
+return s.charAt(0).toUpperCase()+s.slice(1);
+}
+function applyMeta(it,j){
+const st=S.settings;
+const title=cleanTitle(j.title||j.design_type||it.name,st.titleMax);
+let kws=Array.isArray(j.keywords)?j.keywords.map(k=>typeof k==='string'?{w:k,tier:'core',conf:'medium'}:{w:String(k.w||''),tier:k.tier||'core',conf:k.conf||'medium'}).filter(k=>k.w.trim()):[];
+kws.forEach(k=>{k.w=k.w.replace(/\s+/g,' ').trim().toLowerCase()});
+if(st.single){
+const flat=[];kws.forEach(k=>{k.w.split(' ').forEach(wd=>{if(wd&&!STOP.has(wd))flat.push({w:wd,tier:k.tier,conf:k.conf})})});kws=flat;
+}
+if(!st.sil)kws=kws.filter(k=>!/silhouette/.test(k.w));
+if(!st.trans)kws=kws.filter(k=>!/transparent/.test(k.w));
+if(it.alpha===false)kws=kws.filter(k=>!/transparent/.test(k.w));
+const seen=new Set();const out=[];
+for(const k of kws){const key=k.w.toLowerCase();if(!key||seen.has(key))continue;seen.add(key);
+let state=k.conf==='high'?'ok':(k.conf==='medium'?'warn':'bad');
+if(BRANDS.test(key))state='bad';
+out.push({w:key,tier:k.tier,conf:k.conf,state:state,note:BRANDS.test(key)?'possible trademark':(SEASONAL.test(key)&&k.conf!=='high'?'seasonal — verify visually':'')});
+}
+let truncated=false;
+if(out.length>st.kwMax){out.length=st.kwMax;truncated=true}
+it.meta={
+title:title,
+description:String(j.description||'').replace(/\s+/g,' ').trim().slice(0,st.descMax),
+keywords:out,
+catP:String(j.category_primary||'').trim(),
+catS:String(j.category_secondary||'').trim(),
+asset_type:String(j.asset_type||''),design_type:String(j.design_type||''),
+style:Array.isArray(j.style)?j.style.join(', '):String(j.style||''),
+subject:String(j.subject||''),objects:Array.isArray(j.objects)?j.objects.join(', '):'',
+concept:Array.isArray(j.concept)?j.concept.join(', '):'',colors:Array.isArray(j.colors)?j.colors.join(', '):'',
+composition:String(j.composition||''),background:String(j.background||''),orientation:String(j.orientation||''),
+purpose:Array.isArray(j.purpose)?j.purpose.join(', '):''
+};
+it.truncated=truncated;
+it.checks=runChecks(it);
+}
+function runChecks(it){
+const m=it.meta;if(!m)return [];
+const mkt=MKT[S.settings.mkt]||MKT.generic;
+const kws=m.keywords.map(k=>k.w);
+const titleW=m.title.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+const c=[];
+const add=(t,s,n)=>c.push({t:t,s:s,n:n||''});
+add('Title accurately describes artwork',(m.title.length>=12&&kws.slice(0,7).some(k=>k.split(' ').some(w=>titleW.includes(w))))?'pass':'warn');
+if(!it.previewURL)c[0].s='warn',c[0].n='no visual preview — attach image to verify';
+add('Filename matches title',it.renamed?'pass':'warn',it.renamed?'':'press Rename to sync filename');
+add('Main subject appears in keywords',kws.slice(0,5).length>0?'pass':'fail');
+add('Most important keywords first',(m.keywords.slice(0,7).every(k=>k.tier==='core'||k.tier==='style'))?'pass':'warn');
+add('No duplicate keywords','pass');
+add('No irrelevant keywords',m.keywords.some(k=>k.state==='bad')?'fail':(m.keywords.some(k=>k.state==='warn')?'warn':'pass'),'review colored chips');
+add('No misleading commercial claims',(CLAIMS.test(m.title)||CLAIMS.test(m.description)||kws.some(k=>CLAIMS.test(k)))?'fail':'pass');
+add('No trademark / brand stuffing',(BRANDS.test(m.title)||kws.some(k=>BRANDS.test(k)))?'fail':'pass');
+add('Category matches artwork',(VOCAB.has((m.catP||'').toLowerCase())||CAT_NAMES.some(n=>n.toLowerCase()=== (m.catP||'').toLowerCase()))?'pass':'warn',m.catP||'missing');
+add('Description matches artwork',(m.description.length>=40&&m.description.length<=S.settings.descMax)?'pass':'warn');
+add('File type correctly identified',['eps','ai','svg','png','jpg','jpeg','webp','psd','pdf','mp4','mov','gif'].includes(it.ext)?'pass':'warn','.'+it.ext);
+add('Marketplace limits respected',(m.title.length<=mkt.title&&kws.length<=mkt.kw&&kws.length>=(mkt.kwMin||1))?'pass':'fail',mkt.label+': title<='+mkt.title+', kw '+ (mkt.kwMin||1)+'-'+mkt.kw);
+add('Seasonal keywords only when appropriate',kws.some(k=>SEASONAL.test(k))?(m.keywords.filter(k=>SEASONAL.test(k)).every(k=>k.conf==='high')?'pass':'warn'):'pass');
+add('No keyword stuffing',(kws.length<=S.settings.kwMax&&new Set(kws).size===kws.length)?'pass':'fail',it.truncated?'truncated to limit':'');
+return c;
+}
+/* ============ LICENSE / TRIAL ============ */
+const LIC_SECRET='hs-sk-2026-'+fnv1a('hridoy-sarkar-owner');
+function genKey(plan,days,seats,name,email,expOverride){
+const exp=expOverride||(days>0?new Date(Date.now()+days*864e5).toISOString().slice(0,10):'lifetime');
+const payload=JSON.stringify({p:plan,e:exp,s:seats||1,n:name||'',g:email||''});
+return 'HS-'+b64urlEnc(payload)+'-'+fnv1a(payload+LIC_SECRET).toString(36);
+}
+function parseKey(k){
+const m=String(k||'').trim().match(/^HS-([A-Za-z0-9\-_]+)-([A-Za-z0-9]+)$/);
+if(!m)return null;
+let payload;try{payload=b64urlDec(m[1])}catch(e){return null}
+if(fnv1a(payload+LIC_SECRET).toString(36)!==m[2].toLowerCase())return null;
+try{const j=JSON.parse(payload);return {plan:j.p,exp:j.e,seats:j.s||1,name:j.n||'',email:j.g||''}}catch(e){return null}
+}
+function licInfo(){
+if(sessionStorage.getItem('hs_admin')==='1')return {ok:true,label:'OWNER · ADMIN'};
+const key=LS.get('hs_license',null);
+if(key){
+if(key.exp==='lifetime')return {ok:true,label:'LICENSED · '+key.plan+(key.name?' · '+key.name:'')};
+if(new Date(key.exp+'T23:59:59').getTime()>Date.now())return {ok:true,label:'LICENSED · '+key.plan+(key.name?' · '+key.name:'')+' → '+key.exp};
+return {ok:false,reason:'License expired on '+key.exp+'. Renew to continue.'};
+}
+const t=LS.get('hs_trial',null);
+if(t){
+const left=3*864e5-(Date.now()-t);
+if(left>0)return {ok:true,label:'FREE TRIAL · '+Math.ceil(left/864e5)+'d left'};
+return {ok:false,reason:'Your 3-day free trial has ended. Activate a license key to continue.'};
+}
+return {ok:false,reason:'No license found. Start your 3-day unlimited free trial or activate a key.'};
+}
+function refreshGate(){
+const li=licInfo();
+const chip=$('#licChip');chip.textContent=li.ok?('✓ '+li.label):'⛔ LOCKED';
+chip.className='chip '+(li.ok?'ok':'bad');
+$('#footLic').textContent=li.ok?li.label:'Locked';
+const gated=!li.ok;
+$('#gate').hidden=!gated;
+if(gated){
+$('#gateMsg').textContent=li.reason;
+$('#btnTrial').style.display=LS.get('hs_trial',null)?'none':'';
+}
+['#btnStart','#btnRenameAll','#btnDownloadAll','#btnCsv'].forEach(s=>{$(s).disabled=gated});
+refreshAdminBtn();
+}
+function refreshAdminBtn(){$('#btnAdmin').style.display=sessionStorage.getItem('hs_admin')==='1'?'':'none'}
+/* ============ RENDER ============ */
+function filtered(){
+return S.items.filter(it=>{
+if(S.format&&it.ext!==S.format)return false;
+switch(S.filter){
+case 'gen':return !!it.meta;
+case 'processing':return it.status==='processing';
+case 'success':return it.status==='success';
+case 'failed':return it.status==='failed';
+default:return true;
+}
+});
+}
+function rowHTML(it){
+const m=it.meta;
+const srcBadge={embedded:'EPS preview',native:'image',frame:'video frame',manual:'manual img',ghostscript:'EPS engine',rendering:'rendering…',wmf:'WMF (render failed)',pdf:'PDF-based (no render)',none:'no preview',error:'preview error',pending:'reading…'}[it.prevSrc||'pending']||'';
+const waiting=(!it.previewURL&&(it.prevSrc==='pending'||it.prevSrc==='rendering'));
+return '<div class="row '+it.status+'" data-id="'+it.id+'">'+
+'<div class="thumb">'+(it.previewURL?'<img src="'+it.previewURL+'" alt="preview of '+esc(it.name)+'" loading="lazy" decoding="async">':'<div class="noimg'+(waiting?' skel':'')+'">'+esc(it.ext.toUpperCase())+'<small>'+(waiting?'reading file…':(it.prevSrc==='wmf'?'WMF preview could not render':(it.prevSrc==='rendering'?'EPS engine rendering…':'no embedded preview')))+'</small></div>')+
+'<button class="mini" data-act="attach" title="Attach / replace preview image">🖼</button>'+
+(it.previewURL?'<button class="mini" data-act="zoom" title="Zoom preview">⤢</button>':'')+'</div>'+
+'<div class="mid">'+
+'<div class="line1"><b class="fname">'+esc(it.name)+'</b><span class="mut">'+fmtB(it.size)+' · .'+esc(it.ext)+'</span>'+
+'<span class="chip st-'+it.status+' '+ (it.status==='success'?'ok':it.status==='failed'?'bad':it.status==='processing'?'gold':'') +'">'+(it.status==='processing'?'<span class="spin"></span> ':'')+it.status.toUpperCase()+'</span>'+
+'<span class="chip">'+esc(srcBadge)+'</span>'+
+(it.engine?'<span class="chip gold">via '+esc(it.engine)+'</span>':'')+
+(it.alpha===true?'<span class="chip ok">transparent</span>':'')+
+(it.renamed?'<span class="chip gold">renamed</span>':'')+(it._genMs?'<span class="chip ok">'+(it._genMs/1000).toFixed(1)+'s</span>':'')+'</div>'+
+(it.err?'<div class="err"> '+esc(it.err)+'</div>':'')+
+(!(it.previewURL)&&it.meta?'<div class="err" style="background:#2b2510;border-color:#6b5a10;color:#f5d76e">⚠️ Preview unavailable — this metadata is <b>filename-based (UNVERIFIED)</b>. 🖼 button diye ekta jpg/png attach koro, tarpor Regenerate chapo — AI tokhon design chokhe dekhe verify kore metadata debe.</div>':'')+
+'<div class="fld"><span class="lb">Title</span><input class="in f-title" data-act="title" value="'+esc(m?m.title:'')+'" placeholder="SEO title (no hyphens) — generated or type your own"><span class="cnt c-title"></span></div>'+
+'<div class="fld"><span class="lb">Desc</span><textarea class="in f-desc" data-act="desc" rows="2" placeholder="Natural 1-2 sentence description">'+esc(m?m.description:'')+'</textarea><span class="cnt c-desc"></span></div>'+
+'<div class="fld"><span class="lb">Keywords</span><div class="kwbox" style="flex:1"><div class="kws"></div><input class="in f-kwadd" data-act="kwadd" placeholder="+ add keyword & press Enter"></div><span class="cnt c-kw"></span></div>'+
+'<div class="fld"><span class="lb">Category</span><input class="in f-catp" data-act="catp" list="dlTax" value="'+esc(m?m.catP:'')+'" placeholder="Primary category" autocomplete="off"><input class="in f-cats" data-act="cats" list="dlTax" value="'+esc(m?m.catS:'')+'" placeholder="Secondary" autocomplete="off"><span class="fnprev"></span></div>'+
+'<details class="checks"><summary>Quality check <span class="csum"></span></summary><ul class="cul"></ul></details>'+
+'</div>'+
+'<div class="acts">'+
+'<button class="btn primary sm" data-act="gen">'+(m?'↻ Regenerate':'✨ Generate')+'</button>'+
+'<button class="btn sm" data-act="approve" '+(m?'':'disabled')+'>✅ Approve all</button>'+
+'<button class="btn sm" data-act="rename" '+(m?'':'disabled')+'>✏ Rename</button>'+
+'<button class="btn sm" data-act="dl" '+(m?'':'disabled')+'>⬇ Download</button>'+
+'<button class="btn sm danger" data-act="rm">🗑 Remove</button>'+
+'</div></div>';
+}
+function hydrateRow(row,it){
+/* Field listeners are delegated on #items (see wire()) — hydrating a row is therefore
+   pure DOM writes, which keeps a 500-file list responsive. */
+updCounts(row,it);
+renderChips(row,it);
+renderChecks(row,it);
+updFn(row,it);
+}
+function updCounts(row,it){
+const m=it.meta;
+const tIn=row.querySelector('.f-title'),dIn=row.querySelector('.f-desc');
+const tc=row.querySelector('.c-title'),dc=row.querySelector('.c-desc'),kc=row.querySelector('.c-kw');
+if(tIn&&tc){const tl=(tIn.value||'').length;tc.textContent=tl+'/'+S.settings.titleMax;tc.className='cnt c-title'+(tl>S.settings.titleMax?' over':'')}
+if(dIn&&dc){const dl=(dIn.value||'').length;dc.textContent=dl+'/'+S.settings.descMax;dc.className='cnt c-desc'+(dl>S.settings.descMax?' over':'')}
+if(kc)kc.textContent=(m?m.keywords.length:0)+'/'+S.settings.kwMax;
+}
+function renderChips(row,it){
+const box=row.querySelector('.kws');if(!box||!it.meta){if(box)box.innerHTML='<span class="mut">no keywords yet</span>';return}
+box.innerHTML=it.meta.keywords.map((k,i)=>'<span class="kw '+k.state+'" data-i="'+i+'" title="'+esc((k.tier||'')+' · conf '+(k.conf||'')+(k.note?' · '+k.note:'')+' — click to cycle ✅/⚠️/❌')+'">'+esc(k.w)+'<i class="ti">'+esc((k.tier||'').slice(0,4))+'</i><b data-x="'+i+'">×</b></span>').join('')||'<span class="mut">no keywords</span>';
+}
+function renderChecks(row,it){
+const ul=row.querySelector('.cul'),sum=row.querySelector('.csum');if(!ul)return;
+const cs=it.checks||[];
+const p=cs.filter(c=>c.s==='pass').length;
+sum.textContent=cs.length?('— '+p+'/'+cs.length+' pass'):'';
+ul.innerHTML=cs.map(c=>'<li class="'+c.s+' '+('cqc-'+c.s)+'">'+esc(c.t)+(c.n?' <span class="mut">('+esc(c.n)+')</span>':'')+'</li>').join('')||'<li class="mut">run generation to see checks</li>';
+}
+function updFn(row,it){
+const el=row.querySelector('.fnprev');if(!el)return;
+const base=it.outName||((it.meta&&slug(it.meta.title))||slug(it.name));
+el.textContent='📄 '+base+'.'+it.ext+'  +  '+base+'.jpg';
+}
+let _ctrRAF=0;
+function renderList(){
+const list=filtered();
+const box=$('#items');
+if(!list.length){
+box.innerHTML='<div class="page" style="text-align:center;color:var(--mut)">No files in this view. Upload assets above to begin.</div>';
+refreshFormats();updateCounters();return;
+}
+/* Build every row off-document, then attach once: a single reflow instead of one per row. */
+const frag=document.createDocumentFragment();
+const holder=document.createElement('div');
+for(const it of list){
+holder.innerHTML=rowHTML(it);
+const row=holder.firstElementChild;
+holder.removeChild(row);
+frag.appendChild(row);
+hydrateRow(row,it);
+}
+box.textContent='';
+box.appendChild(frag);
+refreshFormats();
+updateCounters();
+}
+function refreshRow(it){
+const row=$('#items .row[data-id="'+it.id+'"]');
+if(!row){updateCounters();return}   /* filtered out of the current view — nothing to repaint */
+const holder=document.createElement('div');holder.innerHTML=rowHTML(it);
+const fresh=holder.firstElementChild;
+/* keep whatever the user is typing / focused on out of the way */
+const ae=document.activeElement;
+const keep=(ae&&row.contains(ae)&&ae.dataset)?ae.dataset.act:null;
+const keepPos=(keep&&ae.selectionStart!=null)?[ae.selectionStart,ae.selectionEnd]:null;
+row.replaceWith(fresh);
+hydrateRow(fresh,it);
+if(keep){const el=fresh.querySelector('[data-act="'+keep+'"]');if(el&&el.focus){try{el.focus({preventScroll:true});if(keepPos&&el.setSelectionRange)el.setSelectionRange(keepPos[0],keepPos[1])}catch(e){}}}
+updateCounters();
+}
+function updateCounters(){
+if(_ctrRAF)return;
+_ctrRAF=requestAnimationFrame(()=>{
+_ctrRAF=0;
+let q=0,p=0,s=0,f=0;
+for(const i of S.items){if(i.status==='queued')q++;else if(i.status==='processing')p++;else if(i.status==='success')s++;else if(i.status==='failed')f++}
+const el=$('#counters');if(el)el.innerHTML='<span class="chip">Total '+S.items.length+'</span><span class="chip gold">Remaining '+(q+p)+'</span><span class="chip gold">Processing '+p+'</span><span class="chip ok">Success '+s+'</span><span class="chip bad">Failed '+f+'</span>';
+});
+}
+function refreshFormats(){
+const sel=$('#selFormat');const cur=sel.value;
+const exts=[...new Set(S.items.map(i=>i.ext))].sort();
+sel.innerHTML='<option value="">All formats</option>'+exts.map(e=>'<option value="'+e+'">.'+e+'</option>').join('');
+sel.value=exts.includes(cur)?cur:'';S.format=sel.value;
+}
+/* ============ UPLOAD ============ */
+/* ============ UPLOAD + PREVIEW PIPELINE (non-blocking, pooled) ============
+   Files are listed instantly. Heavy work (EPS/TIFF/WMF decode, alpha scan, AI image)
+   runs in a bounded pool, mostly inside a Web Worker, and each row repaints itself when
+   its own preview is ready — never the whole list. */
+const PVQ=[];const GSQ=[];
+let pvActive=0,gsActive=false;
+const PV_CONC=3;
+function byId(id){return S.items.find(i=>i.id===id)}
+function trackURL(it,u){if(!it._urls)it._urls=[];if(u)it._urls.push(u);return u}
+function dropItem(it){
+if(!it)return;
+(it._urls||[]).forEach(u=>{try{URL.revokeObjectURL(u)}catch(e){}});
+it._urls=[];it.previewURL=null;it.previewBlob=null;it.apiBlob=null;it.apiImage=null;it.jpgBlob=null;it.canvas=null;it.hasVisual=false;
+}
+function setBar(pct,msg){
+const b=$('#pbar'),m=$('#pmsg');
+if(!b)return;
+if(pct==null||!(pct>=0)||pct>=1){b.classList.remove('on');if(m)m.classList.remove('on');return}
+b.classList.add('on');
+const i=b.firstElementChild;if(i)i.style.width=Math.max(2,Math.min(100,pct*100))+'%';
+if(m){if(msg){m.textContent=msg;m.classList.add('on')}else m.classList.remove('on')}
+}
+async function addFiles(files){
+const arr=Array.from(files||[]).filter(f=>f&&f.name);
+if(!arr.length)return;
+const added=[];
+for(const f of arr){
+const it={id:uid(),file:f,name:f.name,size:f.size,ext:extOf(f.name)||'bin',status:'queued',meta:null,checks:[],
+outName:null,renamed:false,previewURL:null,canvas:null,prevSrc:'pending',alpha:null,err:'',truncated:false,
+apiBlob:null,apiImage:null,previewBlob:null,jpgBlob:null,dim:null,hasVisual:false,_urls:[]};
+if(NATIVE_IMG.indexOf(it.ext)>=0||it.ext==='svg'){
+it.previewURL=trackURL(it,URL.createObjectURL(f));  /* instant thumbnail, zero decoding */
+it.prevSrc='native';it.hasVisual=true;
+}
+S.items.push(it);added.push(it);
+}
+renderList();
+toast(added.length+' file(s) added — total '+S.items.length,'ok');
+for(const it of added)PVQ.push(it);
+pumpPV();
+}
+function pumpPV(){
+while(pvActive<PV_CONC&&PVQ.length){
+const it=PVQ.shift();pvActive++;
+previewBar();
+previewJob(it).catch(err=>{
+try{it.prevSrc='error';it.err='Preview error: '+String(err&&err.message||err);refreshRow(it)}catch(e){}
+}).then(()=>{pvActive--;previewBar();pumpPV()});
+}
+}
+function previewBar(){
+const waiting=pvActive+PVQ.length;
+if(!waiting){if(!S.running&&!gsActive)setBar(null);return}
+let done=0;for(const i of S.items)if(i.prevSrc!=='pending')done++;
+setBar(Math.min(0.99,done/Math.max(1,S.items.length)),'Reading previews — '+waiting+' file(s) in queue');
+}
+async function previewJob(it){
+await nextFrame();
+const ext=it.ext;
+if(VIDEO_EXT.indexOf(ext)>=0){
+const cv=await videoFrame(it.file);
+if(cv){
+it.canvas=cv;it.dim=[cv.width,cv.height];
+const blob=await canvasToBlob(canvasCap(cv,PREVIEW_MAX),'image/jpeg',0.9);
+if(blob){it.previewBlob=blob;it.jpgBlob=blob;it.previewURL=trackURL(it,URL.createObjectURL(blob))}
+it.apiBlob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82);
+it.prevSrc='frame';it.hasVisual=true;it.alpha=false;
+}else{it.prevSrc='none';it.hasVisual=false}
+refreshRow(it);return;
+}
+if(ext==='svg'){
+/* SVG needs an <img> element, which only exists on the UI thread — but it is cheap. */
+try{
+const cv=await decodeFileToCanvas(it.file,'svg',2400);
+if(cv){it.dim=[cv.width,cv.height];it.apiBlob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82);it.hasVisual=!!it.apiBlob;it.prevSrc='native'}
+else it.prevSrc='none';
+}catch(e){it.prevSrc='error'}
+refreshRow(it);return;
+}
+if(NATIVE_IMG.indexOf(ext)>=0){
+if(it.size>NATIVE_READ_MAX){it.prevSrc='native';it.hasVisual=true;refreshRow(it);return}
+const buf=await it.file.arrayBuffer();
+const r=await pvDecode(buf,ext,'',false,90000);
+if(r&&r.ok){
+it.alpha=(ext==='png'||ext==='webp'||ext==='gif')?(r.alpha===true):null;
+it.apiBlob=r.apiBlob||null;
+it.dim=(r.w&&r.h)?[r.w,r.h]:null;
+if(it.apiBlob)it.hasVisual=true;
+if(r.previewBlob&&!it.previewURL){it.previewBlob=r.previewBlob;it.previewURL=trackURL(it,URL.createObjectURL(r.previewBlob))}
+it.prevSrc='native';
+}else{it.prevSrc='error';it.err='Preview error: '+((r&&r.message)||'decode failed')}
+refreshRow(it);return;
+}
+if(VECTOR_EPS.indexOf(ext)>=0){
+const sl=await readEpsSlice(it.file);
+const r=await pvDecode(sl.buf,ext,sl.hint,true,120000);
+if(r&&r.ok&&r.previewBlob){
+it.previewBlob=r.previewBlob;it.apiBlob=r.apiBlob||null;
+it.previewURL=trackURL(it,URL.createObjectURL(r.previewBlob));
+it.prevSrc=r.src||'embedded';it.dim=(r.w&&r.h)?[r.w,r.h]:null;it.hasVisual=true;it.alpha=null;
+}else if(r&&r.ok){
+it.prevSrc=r.src||'none';it.hasVisual=false;
+}else{it.prevSrc='error';it.err='Preview error: '+((r&&r.message)||'decode failed')}
+refreshRow(it);
+if(!it.previewURL&&it.prevSrc!=='error'&&S.settings.gs!==false)GSQ.push(it),pumpGS();
+return;
+}
+if(ext==='pdf'){it.prevSrc='pdf';it.hasVisual=false;refreshRow(it);return}
+it.prevSrc='none';it.hasVisual=false;refreshRow(it);
+}
+async function readSlice(file,max){
+if(!file)return new ArrayBuffer(0);
+if(max&&file.size>max)return await file.slice(0,max).arrayBuffer();
+return await file.arrayBuffer();
+}
+async function readEpsSlice(file){
+/* A DOS-EPS header tells us exactly where the preview lives — read only those bytes
+   instead of pulling a 50 MB file into memory. */
+try{
+if(file.size>=32){
+const head=new Uint8Array(await file.slice(0,32).arrayBuffer());
+if(head[0]===0xC5&&head[1]===0xD0&&head[2]===0xD3&&head[3]===0xC6){
+const dv=new DataView(head.buffer,head.byteOffset,head.byteLength);
+const mfOff=dv.getUint32(12,true),mfLen=dv.getUint32(16,true);
+const tOff=dv.getUint32(20,true),tLen=dv.getUint32(24,true);
+if(tLen>0&&tOff+tLen<=file.size)return {buf:await file.slice(tOff,tOff+tLen).arrayBuffer(),hint:'tiff'};
+if(mfLen>0&&mfOff+mfLen<=file.size)return {buf:await file.slice(mfOff,mfOff+mfLen).arrayBuffer(),hint:'wmf'};
+}
+}
+}catch(e){}
+return {buf:await readSlice(file,EPS_SCAN_MAX),hint:''};
+}
+/* ---- background pass: pure-vector EPS that carries no embedded preview ---- */
+function pumpGS(){
+if(gsActive||!GSQ.length||S.settings.gs===false)return;
+gsActive=true;
+if(!_gsFailed&&!PV._gsToast){PV._gsToast=true;toast('Pure vector EPS found — fetching the one-time EPS render engine (16 MB)…')}
+(async()=>{
+while(GSQ.length){
+const it=GSQ.shift();
+if(S.settings.gs===false||_gsFailed)break;
+setBar(0.5,'Rendering '+it.name+' with the EPS engine…');
+try{await gsRenderItem(it)}
+catch(e){
+it.err=(it.err?it.err+' · ':'')+'EPS engine: '+String(e&&e.message||e);
+if(_gsFailed){GSQ.length=0;toast('EPS render engine unavailable — embedded previews still work normally','bad');break}
+}
+refreshRow(it);
+await yieldUI();
+}
+gsActive=false;setBar(null);
+})();
+}
+async function gsRenderItem(it){
+it.prevSrc='rendering';refreshRow(it);
+const buf=await it.file.arrayBuffer();
+const cv=await ghostscriptEPSWithTimeout(buf,30000);
+if(!cv||!cv.getContext)throw new Error('no raster output');
+it.dim=[cv.width,cv.height];
+it.previewBlob=await canvasToBlob(canvasCap(cv,PREVIEW_MAX),'image/jpeg',0.9);
+it.apiBlob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82);
+if(it.previewBlob){it.previewURL=trackURL(it,URL.createObjectURL(it.previewBlob));it.prevSrc='ghostscript';it.hasVisual=true;it.err=''}
+else it.prevSrc='none';
+}
+/* ---- the image actually sent to the vision model: built once, cached, white background ---- */
+function blobToDataURL(b){
+return new Promise((res,rej)=>{
+try{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=()=>rej(new Error('read failed'));r.readAsDataURL(b)}
+catch(e){rej(e)}
+});
+}
+async function decodeFileToCanvas(file,ext,max){
+if(!file)return null;
+if(ext==='svg'){
+const url=URL.createObjectURL(file);
+try{const im=await loadImg(url);return canvasCap(imgToCanvas(im),max||2400)}
+catch(e){return null}
+finally{try{URL.revokeObjectURL(url)}catch(e2){}}
+}
+return await decodeBlobToCanvas(file,max||2400);
+}
+async function ensureApiImage(it){
+if(it.apiImage)return it.apiImage;
+try{
+let blob=it.apiBlob||null;
+if(!blob){
+let cv=null;
+if(NATIVE_IMG.indexOf(it.ext)>=0||it.ext==='svg')cv=await decodeFileToCanvas(it.file,it.ext,2400);
+else if(it.previewBlob)cv=await decodeBlobToCanvas(it.previewBlob,2400);
+else if(it.canvas)cv=it.canvas;
+if(cv){blob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82);it.apiBlob=blob}
+}
+if(!blob)return null;
+it.apiImage=await blobToDataURL(blob);
+it.hasVisual=true;
+return it.apiImage;
+}catch(e){return null}
+}
+async function addEntries(entries,path){
+/* Collect the whole tree first, then add it in ONE batch — the old version re-rendered the
+   entire list for every single file and also silently dropped files beyond the first 100
+   per directory (readEntries is paginated). */
+const files=[];
+async function walk(list){
+for(const en of list||[]){
+if(!en)continue;
+if(en.isFile){const f=await new Promise(r=>{try{en.file(r,()=>r(null))}catch(e){r(null)}});if(f)files.push(f)}
+else if(en.isDirectory){
+let rd=null;try{rd=en.createReader()}catch(e){continue}
+for(;;){
+const batch=await new Promise(r=>{try{rd.readEntries(r,()=>r([]))}catch(e){r([])}});
+if(!batch||!batch.length)break;
+await walk(batch);
+if(batch.length<100)break;
+}
+}
+}
+}
+await walk(entries);
+if(files.length)await addFiles(files);
+}
+/* ============ QUEUE / GENERATE ============ */
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function keysOf(prov){const k=S.keys[prov];if(!k)return[];if(typeof k==='string')return k.trim()?[k.trim()]:[];return k.filter(x=>x&&String(x).trim())}
+const keyMeta={};
+function keyMetaReset(){for(const k of Object.keys(keyMeta))delete keyMeta[k]}
+for(const pk of Object.keys(PROVIDERS)){if(typeof S.keys[pk]==='string'){S.keys[pk]=S.keys[pk].trim()?[S.keys[pk].trim()]:[];LS.set('hs_keys',S.keys)}}
+async function acquireKey(prov){
+const keys=keysOf(prov);if(!keys.length)return -1;
+const meta=keyMeta[prov]||(keyMeta[prov]=[]);
+while(meta.length<keys.length)meta.push({cool:0,last:0});
+const spacing=60000/Math.max(1,+S.settings.rpm||10);
+for(;;){
+const now=Date.now();
+let best=-1,bestLast=Infinity;
+for(let i=0;i<keys.length;i++){if(meta[i].cool<=now&&meta[i].last<bestLast){best=i;bestLast=meta[i].last}}
+if(best>=0){
+const w=Math.max(0,meta[best].last+spacing-now);
+if(w>0){await sleep(Math.min(w,10000));continue}
+meta[best].last=Date.now();return best;
+}
+const earliest=Math.min.apply(null,meta.map(m=>m.cool));
+await sleep(Math.min(Math.max(earliest-now,250),10000));
+}
+}
+function localFallbackMeta(it, reason){
+ const st=S.settings, ext=it.ext||'';
+ let base=String(it.name||'design').replace(/\.[^.]+$/,'').replace(/[._]+/g,' ').replace(/[-–—]+/g,' ').replace(/\s+/g,' ').trim();
+ base=base.replace(/\b\d+\b/g,' ').replace(/\s+/g,' ').trim()||'stock design';
+ const words=base.toLowerCase().split(/\s+/).filter(w=>w.length>1&&!STOP.has(w));
+ const uniq=a=>{const z=[],seen=new Set();for(const x of a){const k=String(x||'').toLowerCase().trim();if(k&&!seen.has(k)){seen.add(k);z.push(k)}}return z};
+ let subject=base;
+ let designType=['eps','ai','svg'].includes(ext)?'vector illustration':(['png','jpg','jpeg','webp'].includes(ext)?'graphic design':'digital asset');
+ let style=[];
+ if(S.settings.sil)style.push('silhouette');
+ if(S.settings.trans)style.push('transparent background');
+ const kw=uniq([...words,designType,'vector','illustration','graphic','design','editable','isolated','stock','creative asset','commercial use']).slice(0,Math.min(st.kwMax,25));
+ const title=cleanTitle(subject+' '+designType,st.titleMax);
+ const desc='Stock '+designType+' featuring '+subject+'. Suitable for design and creative projects.';
+ applyMeta(it,{asset_type:ext||'digital asset',design_type:designType,style,subject,objects:[],concept:['creative design'],colors:[],composition:'isolated graphic composition',background:it.alpha===true?'transparent':'plain or isolated background',orientation:'varied',purpose:['design resource','stock asset'],title,description:desc,keywords:kw.map((w,i)=>({w,tier:i<7?'core':(i<12?'style':'usage'),conf:'low'})),category_primary:'Graphics',category_secondary:'Design'});
+ it.engine='Local safe fallback';
+ it.fallback=true;
+ it._fallbackReason=String(reason||'AI unavailable');
+}
+async function generateItem(it){
+ const li=licInfo();if(!li.ok){refreshGate();return}
+ it.status='processing';it.err='';it._genStart=performance.now();refreshRow(it);updateCounters();
+ const prompt=buildPrompt(it);
+ // VISUAL-ONLY: the rendered artwork is the semantic source. Filename is never sent as a semantic hint.
+ const img=await ensureApiImage(it);
+ if(!img){it.status='queued';it.err='Visual preview is required for image-based metadata generation.';refreshRow(it);updateCounters();return}
+ const preferred=S.settings.prov;
+ const providers=[preferred,...Object.keys(PROVIDERS).filter(p=>p!==preferred&&keysOf(p).length)].filter((p,i,a)=>a.indexOf(p)===i&&keysOf(p).length);
+ if(!providers.length){it.status='queued';it.err='No API key available for visual metadata generation.';refreshRow(it);updateCounters();return}
+ let lastErr=null;
+ // Try every configured key/provider before waiting on a quota window.
+ for(const prov of providers){
+   const ks=keysOf(prov);
+   const model=S.models[prov]||PROVIDERS[prov].def;
+   for(let ki=0;ki<ks.length;ki++){
+     try{
+       const txt=await callAI(prov,ks[ki],model,prompt,img);
+       const j=parseJSONLenient(txt);applyMeta(it,j);
+       it.engine=PROVIDERS[prov].label+' · vision';it.fallback=false;it.status='success';
+       it._genMs=Math.round(performance.now()-it._genStart);stats.gen++;saveStats();refreshRow(it);updateCounters();return;
+     }catch(e){
+       lastErr=e;
+       const msg=String(e&&e.message||e);
+       // Model compatibility: retry the provider's current default model immediately.
+       if(/404|not found|no longer available|does not exist|unsupported model|deprecated/i.test(msg)){
+         const alt=PROVIDERS[prov].def;
+         if(alt!==model){
+           try{
+             const txt=await callAI(prov,ks[ki],alt,prompt,img);
+             const j=parseJSONLenient(txt);applyMeta(it,j);
+             it.engine=PROVIDERS[prov].label+' · vision';it.fallback=false;it.status='success';
+             it._genMs=Math.round(performance.now()-it._genStart);stats.gen++;saveStats();refreshRow(it);updateCounters();return;
+           }catch(e2){lastErr=e2}
+         }
+       }
+     }
+   }
+ }
+ // Google/Gemini quota errors are a service limit, not an asset failure.
+ // Wait for the server-advised window and retry the SAME visual request so the asset remains successful.
+ const qmsg=String(lastErr&&lastErr.message||lastErr||'');
+ const rm=qmsg.match(/retry in\s+([0-9.]+)\s*s/i);
+ const retrySec=rm?Math.ceil(Number(rm[1])):0;
+ if(retrySec>0&&retrySec<300){
+   it.err='API quota reached — waiting '+retrySec+'s, then retrying visual analysis…';
+   refreshRow(it);updateCounters();
+   await sleep((retrySec+1)*1000);
+   return generateItem(it);
+ }
+ // Do not create filename-based metadata. If the service is temporarily unavailable,
+ // leave the item queued so a later Start Processing can retry it without false metadata.
+ it.status='queued';it.err='Visual AI unavailable: '+qmsg;
+ refreshRow(it);updateCounters();
+}
+async function startQueue(){
+const li=licInfo();if(!li.ok){refreshGate();toast('Activate license / trial first','bad');return}
+const provList=Object.keys(PROVIDERS).filter(p=>keysOf(p).length);
+if(!provList.length){openApi();toast('Save at least one API key first (AI-only mode)','bad');return}
+if(S.running)return;
+const queue=S.items.filter(i=>i.status==='queued');
+if(!queue.length){toast('Nothing in queue — upload files or clear filters','bad');return}
+S.running=true;S.stop=false;
+const bp=$('#btnStop');if(bp)bp.hidden=false;
+toast('Sequential mode: 1 file at a time · target ≤10s per metadata');
+// IMPORTANT: create and await each job only when the previous one has finished.
+// This prevents multiple vision requests from starting together.
+let _qn=0;
+for(const it of queue){
+  if(S.stop){toast('Stopped — বাকি file গুলো queue তে আছে, আবার Start চাপলে চলবে','bad');break}
+  if(it.status!=='queued') continue;
+  _qn++;
+  setBar(_qn/queue.length,'Generating '+_qn+' / '+queue.length+' — '+it.name);
+  await generateItem(it);
+  updateCounters();
+  await yieldUI();
+}
+S.running=false;setBar(null);refreshGate();
+const bp2=$('#btnStop');if(bp2)bp2.hidden=true;
+updateCounters();
+const done=S.items.filter(i=>i.status==='success').length,fail=S.items.filter(i=>i.status==='failed').length;
+toast('Queue finished — success '+done+', failed '+fail, fail?'bad':'ok');
+}
+/* ============ RENAME / DOWNLOAD / CSV ============ */
+function doRename(it){
+if(!it.meta){toast('Generate metadata first','bad');return}
+it.outName=(slug(it.meta.title)||slug(it.name))+'.'+it.ext;
+it.renamed=true;it.checks=runChecks(it);
+stats.ren++;saveStats();
+refreshRow(it);
+}
+async function canvasJpgBytes(it){
+/* Reuses the blob we already produced for the thumbnail — no second full decode. */
+try{
+if(it.jpgBlob)return new Uint8Array(await it.jpgBlob.arrayBuffer());
+let blob=null;
+if((it.ext==='jpg'||it.ext==='jpeg')&&it.file)blob=it.file;
+else if(it.previewBlob)blob=it.previewBlob;
+else{
+let cv=it.canvas||null;
+if(!cv&&(NATIVE_IMG.indexOf(it.ext)>=0||it.ext==='svg'))cv=await decodeFileToCanvas(it.file,it.ext,2400);
+if(!cv&&it.previewURL&&String(it.previewURL).indexOf('blob:')===0){const im=await loadImg(it.previewURL);cv=imgToCanvas(im)}
+if(cv)blob=await canvasToBlob(flattenWhite(canvasCap(cv,2400)),'image/jpeg',0.92);
+}
+if(!blob)return null;
+it.jpgBlob=blob;
+return new Uint8Array(await blob.arrayBuffer());
+}catch(e){return null}
+}
+async function collectFiles(list){
+const files=[];
+let _cn=0;
+for(const it of list){
+if(!it.meta)continue;
+_cn++;
+setBar(_cn/Math.max(1,list.length),'Preparing '+_cn+' / '+list.length+' — '+it.name);
+await yieldUI();
+const base=it.outName||(slug(it.meta.title)||slug(it.name));
+let orig=new Uint8Array(await it.file.arrayBuffer());
+if(S.settings.embed){
+if(['eps','ai','ps'].includes(it.ext))orig=epsEmbedXMP(orig,buildXMP(it.meta));
+else if(['jpg','jpeg'].includes(it.ext))orig=jpegEmbedXMP(orig,buildXMP(it.meta));
+}
+files.push({name:base+'.'+it.ext,data:orig});
+if(it.ext!=='jpg'&&it.ext!=='jpeg'){
+/* a JPG source already produced base+.jpg above — a second identical entry would collide */
+let jpg=await canvasJpgBytes(it);
+if(jpg){if(S.settings.embed)jpg=jpegEmbedXMP(jpg,buildXMP(it.meta));files.push({name:base+'.jpg',data:jpg})}
+else toast('No preview image for '+it.name+' — JPG skipped (attach a preview image)','bad');
+}
+}
+setBar(null);
+return files;
+}
+async function downloadItems(list){
+const li=licInfo();if(!li.ok){refreshGate();return}
+const ready=list.filter(i=>i.meta);
+if(!ready.length){toast('Nothing ready — generate metadata first','bad');return}
+const files=await collectFiles(ready);
+if(!files.length)return;
+stats.dl++;saveStats();
+if(window.showDirectoryPicker){
+try{
+const dir=await window.showDirectoryPicker({mode:'readwrite'});
+for(const f of files){
+const h=await dir.getFileHandle(f.name,{create:true});
+const w=await h.createWritable();await w.write(new Blob([f.data]));await w.close();
+}
+toast(files.length+' file(s) saved to your folder','ok');return;
+}catch(e){if(e&&e.name==='AbortError'){toast('Folder selection cancelled','bad');return}}
+}
+const zip=zipStore(files);
+downloadBlob(zip,'HS_Metadata_Files_'+new Date().toISOString().slice(0,10)+'.zip');
+toast('Downloaded ZIP with '+files.length+' file(s) (folder picker needs Chrome/Edge)','ok');
+}
+async function exportCSV(){
+const li=licInfo();if(!li.ok){refreshGate();return}
+const ready=S.items.filter(i=>i.meta);
+if(!ready.length){toast('No generated metadata to export','bad');return}
+const csv=buildCSV(ready,S.settings.mkt);
+const name=(MKT[S.settings.mkt].label.replace(/[^\w]+/g,''))+'_metadata_'+new Date().toISOString().slice(0,10)+'.csv';
+stats.csv++;saveStats();
+if(window.showDirectoryPicker){
+try{
+const dir=await window.showDirectoryPicker({mode:'readwrite'});
+const h=await dir.getFileHandle(name,{create:true});
+const w=await h.createWritable();await w.write(new Blob([csv],{type:'text/csv'}));await w.close();
+toast('CSV saved: '+name,'ok');return;
+}catch(e){if(e&&e.name==='AbortError'){toast('Folder selection cancelled','bad');return}}
+}
+downloadBlob(new Blob([csv],{type:'text/csv'}),name);
+toast('CSV downloaded: '+name,'ok');
+}
+/* ============ MODALS: API KEYS / SETTINGS ============ */
+function keyRows(p){const ks=keysOf(p);const n=Math.max(1,ks.length);let h='';for(let i=0;i<n;i++)h+='<div class="trow" style="margin-bottom:4px"><input type="password" class="apikey in" data-p="'+p+'" placeholder="API key '+(i+1)+' for '+PROVIDERS[p].label+'" value="'+esc(ks[i]||'')+'"><button class="btn sm" data-rmkey="'+p+'" style="width:auto" title="Remove this key">✕</button></div>';return h}
+function openApi(){
+const body=$('#apiBody');
+body.innerHTML='<p class="mut" style="margin-bottom:10px"><b>💰 FREE API key (no credit card):</b> go to <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" style="color:var(--gold2)">aistudio.google.com/app/apikey</a> with your Google account and press "Create API key" — takes 1 minute, stays free. Free-tier models that work with this tool (all "Free of charge" per official Google pricing): <b>gemini-3.5-flash-lite</b> (default — fast, new 3.5 series) · <b>gemini-2.5-flash</b> (~1500 req/day) · <b>gemini-3-flash-preview</b> · <b>gemini-3.1-flash-lite</b> · <b>gemini-2.5-flash-lite</b>. Keep the engine as Gemini/Google AI Studio — default model is already <b>gemini-3.5-flash-lite</b> — then paste your key below. If you previously saved another model, change the model dropdown per engine to <b>gemini-3.5-flash-lite</b> and Save. NOTE: Pro models (e.g. gemini-3.1-pro-preview) are paid-only — with a free key Google rejects them, which looks like "invalid key" but is really a model/quota error.</p>'+
+'<p class="mut" style="margin-bottom:10px"><b>Security:</b> browser-local API keys are convenient for this local HTML tool, but OpenAI recommends routing production requests through your own backend instead of exposing keys client-side.</p><p class="mut" style="margin-bottom:10px">Keys are stored ONLY in this browser (localStorage). Add ONE OR MORE keys per engine — multiple keys rotate automatically so rate-limits almost never block you. For OpenAI, create your key at <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">platform.openai.com/api-keys</a>. Or import a <b>.txt</b> with lines like <code>gemini=AIza...</code> or <code>openai=sk-...</code>.</p>'+
+Object.keys(PROVIDERS).map(id=>{const P=PROVIDERS[id];
+return '<div class="msec"><h4><label style="text-transform:none;letter-spacing:0"><input type="radio" name="prov" value="'+id+'" '+(S.settings.prov===id?'checked':'')+'> '+P.label+' <span class="chip gold">'+keysOf(id).length+' key(s)</span></label></h4>'+
+'<div class="grid2"><div style="min-width:0"><div id="kr-'+id+'">'+keyRows(id)+'</div><button class="btn sm" data-addkey="'+id+'" style="width:auto;margin-top:6px">+ add '+P.label+' key</button></div>'+
+'<select class="apimodel" data-p="'+id+'">'+(P.models.includes(S.models[id]||P.def)?P.models:[S.models[id]||P.def].concat(P.models)).map(m=>'<option '+((S.models[id]||P.def)===m?'selected':'')+'>'+m+'</option>').join('')+'</select></div>'+
+'<div class="mut" style="margin-top:6px">'+(P.type==='gemini'?'Vision-capable Gemini endpoint (generativelanguage.googleapis.com)':P.type==='openai_responses'?'OpenAI Responses API with image input':'OpenAI-compatible chat endpoint with image input')+'</div></div>';
+}).join('')+
+'<div class="trow"><button class="btn primary" id="apiSave">💾 Save keys</button><button class="btn" id="apiImport">📥 Import keys from .txt</button><input type="file" id="apiTxt" accept=".txt,text/plain" hidden><button class="btn" id="apiTest">🧪 Test active engine</button></div>';
+body.querySelectorAll('input[name=prov]').forEach(r=>r.addEventListener('change',e=>{S.settings.prov=e.target.value;saveSettings();syncToolbar()}));
+body.addEventListener('click',e=>{
+const a=e.target.closest('[data-addkey]');
+if(a){const p=a.dataset.addkey;$('#kr-'+p).insertAdjacentHTML('beforeend','<div class="trow" style="margin-bottom:4px"><input type="password" class="apikey in" data-p="'+p+'" placeholder="API key for '+PROVIDERS[p].label+'" value=""><button class="btn sm" data-rmkey="'+p+'" style="width:auto" title="Remove this key">✕</button></div>');return}
+const r=e.target.closest('[data-rmkey]');
+if(r){const row=r.closest('.trow');const box=row.parentElement;if(box.children.length>1)row.remove();else row.querySelector('input').value=''}
+});
+$('#apiSave').onclick=()=>{
+Object.keys(PROVIDERS).forEach(id=>{S.keys[id]=Array.from(body.querySelectorAll('.apikey[data-p="'+id+'"]')).map(i=>i.value.trim()).filter(Boolean)});keyMetaReset();
+body.querySelectorAll('.apimodel').forEach(i=>{S.models[i.dataset.p]=i.value});
+LS.set('hs_keys',S.keys);LS.set('hs_models',S.models);toast('API keys saved locally','ok');closeModals();
+};
+$('#apiImport').onclick=()=>$('#apiTxt').click();
+$('#apiTxt').onchange=async e=>{
+const f=e.target.files[0];if(!f)return;
+const txt=await f.text();
+let applied=0;
+txt.split(/\r?\n/).forEach(ln=>{
+ln=ln.trim();if(!ln||ln.startsWith('#'))return;
+const m=ln.match(/^([a-z]+)\s*[:=]\s*(.+)$/i);
+if(m){const p=m[1].toLowerCase();const pid=Object.keys(PROVIDERS).find(k=>k===p||(p==='google'&&k==='gaistudio')||(p==='xai'&&k==='grok')||(p==='openai'&&k==='openai'));if(pid){(Array.isArray(S.keys[pid])?S.keys[pid]:(S.keys[pid]=[])).push(m[2].trim());applied++}}
+else if(ln.length>12){const cp=S.settings.prov;(Array.isArray(S.keys[cp])?S.keys[cp]:(S.keys[cp]=[])).push(ln);applied++}
+});
+LS.set('hs_keys',S.keys);keyMetaReset();toast(applied+' key(s) imported','ok');openApi();
+};
+$('#apiTest').onclick=async()=>{
+const prov=S.settings.prov,key=keysOf(prov)[0];
+if(!key){toast('No key for '+PROVIDERS[prov].label,'bad');return}
+toast('Testing '+PROVIDERS[prov].label+'…');
+try{
+const t=await callAI(prov,key,S.models[prov]||PROVIDERS[prov].def,'Reply with the single word: READY',null);
+toast('OK → '+t.slice(0,40),'ok');
+}catch(e){toast('Test failed: '+e.message,'bad')}
+};
+$('#mApi').hidden=false;
+}
+function openSettings(){
+const st=S.settings;
+$('#setBody').innerHTML=
+'<div class="grid3">'+
+'<label class="sel">Title max chars <input type="number" id="stTitle" value="'+st.titleMax+'" min="20" max="300"></label>'+
+'<label class="sel">Keywords max <input type="number" id="stKw" value="'+st.kwMax+'" min="5" max="100"></label>'+
+'<label class="sel">Description max <input type="number" id="stDesc" value="'+st.descMax+'" min="50" max="2000"></label>'+
+'<label class="sel">Processing mode <span class="chip gold">1 file at a time · ≤10s target</span><input type="hidden" id="stWorkers" value="1"></label>'+
+'<label class="sel">Requests/min per key <input type="number" id="stRpm" value="'+(st.rpm||10)+'" min="1" max="120"></label>'+
+'<label class="sel">Pure EPS renderer <input type="checkbox" id="stGs" '+(st.gs!==false?'checked':'')+'> <span class="mut">EPS/AI file e kono embedded preview na thakle 16 MB engine ekbar download kore render kore (background e, UI atkay na)</span></label>'+
+'</div>'+
+'<div class="msec" style="margin-top:12px"><h4>Defaults</h4><div class="grid2">'+
+'<label class="sel">Default marketplace <select id="stMkt">'+Object.keys(MKT).map(k=>'<option value="'+k+'" '+(st.mkt===k?'selected':'')+'>'+MKT[k].label+'</option>').join('')+'</select></label>'+
+'<label class="sel">Default AI engine <select id="stProv">'+Object.keys(PROVIDERS).map(k=>'<option value="'+k+'" '+(st.prov===k?'selected':'')+'>'+PROVIDERS[k].label+'</option>').join('')+'</select></label>'+
+'</div></div>'+
+'<p class="mut" style="margin:10px 0">Marketplace rule table (editable in Admin → Rules): '+Object.keys(MKT).map(k=>MKT[k].label+' title≤'+MKT[k].title+'/kw≤'+MKT[k].kw).join(' · ')+'</p>'+
+'<div class="trow"><button class="btn primary" id="stSave">💾 Save settings</button></div>';
+$('#stSave').onclick=()=>{
+st.titleMax=Math.max(20,Math.min(300,+$('#stTitle').value||100));
+st.kwMax=Math.max(5,Math.min(100,+$('#stKw').value||49));
+st.descMax=Math.max(50,Math.min(2000,+$('#stDesc').value||300));
+st.mkt=$('#stMkt').value;st.prov=$('#stProv').value;
+st.workers=1;
+st.gs=$('#stGs').checked;
+st.rpm=Math.max(1,Math.min(120,+$('#stRpm').value||10));
+saveSettings();syncToolbar();renderList();toast('Settings saved','ok');closeModals();
+};
+$('#mSettings').hidden=false;
+}
+function closeModals(){
+$$('.modal').forEach(m=>m.hidden=true);
+const pi=$('#prevImg');if(pi&&pi.getAttribute('src'))pi.removeAttribute('src');  /* release the decoded bitmap */
+}
+/* ============ BUYER ACCESS BOX (handover) ============ */
+let _hv=null;
+function handoverText(k){
+return [
+'🎁 HS Stock Metadata Studio — ACCESS',
+'',
+'Buyer: '+(k.name||'—'),
+'Email: '+(k.email||'—'),
+'Plan: '+k.plan,
+'Valid: '+(k.exp==='lifetime'?'Lifetime (forever)':String(k.exp)),
+'Seats: '+(k.seats||1),
+'',
+'🔑 LICENSE KEY:',
+k.key,
+'',
+'HOW TO ACTIVATE:',
+'1. Open your HS Stock Metadata Studio link in Chrome or Edge browser.',
+'2. In the "License Required" box, paste the key and press "Activate Key".',
+'3. Done — workspace unlocked for your plan period.',
+'',
+'⚠ This key is personal — signed to your name & Gmail, non-transferable.',
+'Support: hs047502@gmail.com / 01746443525',
+'— Md. Hridoy Sarkar'
+].join('\n');
+}
+function openHandover(k){
+if(!k)return;
+_hv=k;
+const b=$('#hvBox');if(b)b.textContent=handoverText(k);
+const m=$('#mHandover');if(m)m.hidden=false;
+}
+document.addEventListener('click',e=>{
+if(e.target.closest('#hvCopy')){
+if(_hv&&navigator.clipboard){navigator.clipboard.writeText(handoverText(_hv));toast('Access box copied — send it to the buyer','ok')}
+}
+else if(e.target.closest('#hvMail')){
+const k=_hv;
+if(k&&k.email)location.href='mailto:'+k.email+'?subject='+encodeURIComponent('Your HS Stock Metadata Studio access — '+k.plan)+'&body='+encodeURIComponent(handoverText(k));
+}
+});
+/* The Bangla tutorial video lives in tutorial-bn.mp4 next to this file and is loaded
+   ONLY when the Tutorials tab is opened. It used to be a 3.4 MB base64 string inside this
+   script, which the browser had to download, parse and decode on every single page load —
+   that was the main reason the site hung. */
+const TUT_VIDEO_SRC='tutorial-bn.mp4';
+let _tutWired=false;
+function loadTutVideo(){
+const v=$('#tutVid');
+if(!v||v.dataset.wired==='1')return;
+v.dataset.wired='1';
+v.addEventListener('error',()=>{
+v.style.display='none';
+const n=$('#tutNote');
+if(n)n.innerHTML='⚠️ <code>tutorial-bn.mp4</code> file ta index.html er pashe pawa gelo na — oi file ta upload kore page refresh din, video tokhon cholbe. (Baki sob feature thik ache.)';
+},{once:true});
+v.src=TUT_VIDEO_SRC;
+v.preload='metadata';
+}
+/* ============ ADMIN ============ */
+const ADMIN_EMAIL='hs047502@gmail.com';
+function openLogin(){
+const has=!!LS.get('hs_admin_hash',null);
+$('#loginBody').innerHTML='<p class="mut" style="margin-bottom:10px">'+(has?'Enter owner password.':'First run: set the owner password for '+ADMIN_EMAIL+'.')+'</p>'+
+'<div class="fld" style="margin-bottom:8px"><span class="lb">Email</span><input class="in" id="lgEmail" type="email" value="'+ADMIN_EMAIL+'" '+(has?'disabled':'')+'></div>'+
+'<div class="fld" style="margin-bottom:8px"><span class="lb">Password</span><input class="in" id="lgPass" type="password" placeholder="'+(has?'password':'set new password (min 4 chars)')+'"></div>'+
+(has?'':'<div class="fld" style="margin-bottom:8px"><span class="lb">Confirm</span><input class="in" id="lgPass2" type="password" placeholder="repeat password"></div>')+
+'<button class="btn primary" id="lgGo">'+(has?'🔓 Login':'💾 Create & Login')+'</button>';
+$('#lgGo').onclick=async()=>{
+const em=$('#lgEmail').value.trim().toLowerCase(),pw=$('#lgPass').value;
+if(em!==ADMIN_EMAIL){toast('Admin email mismatch','bad');return}
+if(!has){
+const p2=$('#lgPass2').value;
+if(pw.length<4){toast('Password min 4 characters','bad');return}
+if(pw!==p2){toast('Passwords do not match','bad');return}
+LS.set('hs_admin_hash',await sha256(ADMIN_EMAIL+'|'+pw));
+sessionStorage.setItem('hs_admin','1');toast('Owner account created — welcome!','ok');closeModals();openAdmin();refreshGate();return;
+}
+const h=await sha256(ADMIN_EMAIL+'|'+pw);
+if(h===LS.get('hs_admin_hash',null)){sessionStorage.setItem('hs_admin','1');toast('Admin session started','ok');closeModals();openAdmin();refreshGate()}
+else toast('Wrong password','bad');
+};
+$('#mLogin').hidden=false;
+}
+const DEFAULT_PAGES={
+plans:[
+{name:'Free Trial',price:'৳0',period:'3 days',feat:'Unlimited metadata generation, rename, CSV & XMP export for 3 days.',hot:false},
+{name:'Monthly',price:'৳499',period:'/ month',feat:'Unlimited metadata + all engines, marketplace CSV adapters, XMP embedding.',hot:true},
+{name:'Yearly',price:'৳3,999',period:'/ year',feat:'Everything in Monthly + priority support + early features.',hot:false},
+{name:'Lifetime',price:'৳7,999',period:'one-time',feat:'Forever access, all future updates included.',hot:false}
+],
+payment:{bkash:'01746443525',nogod:'01575003083',note:'Send the payment via bKash / Nagad (Send Money), then email the Transaction ID + the Gmail address you want activated to hs047502@gmail.com. Your license key will be delivered to that Gmail within 24 hours. The owner registers your name + Gmail with the key, so the key is personal and non-transferable. The key works only for its subscription period — when the mead (period) ends, the tool locks automatically.'},
+contact:{dev:'Md. Hridoy Sarkar',email:'hs047502@gmail.com',phone:'01746443525',role:'Owner & Developer'},
+tutorials:[
+'Upload: drag & drop files/folders anywhere on the workspace, or use "+ Upload more" / "Upload folder". Unlimited files are supported (EPS, AI, SVG, PNG, JPG, PSD, PDF, MP4…).',
+'EPS preview: the studio reads the embedded preview inside your EPS locally in the browser and shows it — verify with your own eyes whether it is the cat design or the dog design before spending API credits.',
+'Set your API key once in "🔑 API Keys" (Gemini / Google AI Studio / OpenAI / Grok / Mistral). You can also import a .txt file with lines like gemini=YOUR_KEY.',
+'Pick your target marketplace and toggles (Single keyword / Silhouette / Transparent BG / Embed XMP), then press "▶ Start Processing".',
+'Review every row: title (no hyphens, max 100 chars by default), natural description, prioritized keyword chips (green = safe, yellow = review, red = remove/fix), primary + secondary category, and the 14-point quality checklist.',
+'Click a keyword chip to cycle ✅/⚠️/❌, click × to delete it, or type in the "+ add keyword" box. "Approve all" marks everything green.',
+'Press "✏ Rename All" — every file is renamed to its SEO title (hyphen-separated slug). The filename preview under Category shows exactly what you will get.',
+'Press "⬇ Download All (EPS+JPG)" — choose a folder; the renamed EPS and its matching JPG (same name) are written there. If XMP embed is ON, both files carry the metadata inside.',
+'Press "📄 Download all CSV" — choose a folder; you get a marketplace-ready CSV (File name, Title, Description, Keywords, Category) named after the selected marketplace.',
+'Admin (owner only): license keys with expiry + seats, usage stats, pricing/tutorial/contact/payment editors and marketplace rule limits.'
+]
+};
+function pages(){return LS.get('hs_pages',DEFAULT_PAGES)}
+let _pagesOK=false;
+function renderPages(force){
+if(_pagesOK&&force!==true)return;   /* rebuild only when the owner edits the content */
+const P=pages();
+$('#view-pricing').innerHTML='<div class="page"><h2>💳 Pricing & Payment</h2><p>HS Stock Metadata Studio is sold as a licensed tool. Payment is manual via bKash / Nagad, and the license key is delivered to your Gmail by the owner.</p><div class="plans">'+P.plans.map(p=>'<div class="plan'+(p.hot?' hot':'')+'"><span class="pn">'+esc(p.name)+'</span><span class="pp">'+esc(p.price)+'</span><span class="mut">'+esc(p.period)+'</span><span class="pf">'+esc(p.feat)+'</span></div>').join('')+'</div>'+
+'<div class="paybox"><div class="pay"><b>bKash:</b> '+esc(P.payment.bkash)+' (Send Money)</div><div class="pay"><b>Nagad:</b> '+esc(P.payment.nogod)+' (Send Money)</div></div><p>'+esc(P.payment.note)+'</p></div>';
+$('#view-tutorials').innerHTML='<div class="page"><h2>🎬 বাংলা ভিডিও টিউটোরিয়াল</h2><video id="tutVid" controls preload="none" playsinline style="width:100%;max-height:70vh;border-radius:10px;background:#000"></video><p class="mut" id="tutNote">বাংলা ভয়েসে সম্পূর্ণ ভিডিও টিউটোরিয়াল: সেটআপ → মেটাডেটা → এমবেড → সিএসভি। ভিডিও ফাইল <code>tutorial-bn.mp4</code> index.html er pashe thakte hobe — tab kholar somoy load hoy.</p></div>'+'<div class="page"><h2>📚 Tutorials</h2><ol>'+P.tutorials.map(t=>'<li>'+esc(t)+'</li>').join('')+'</ol></div>';
+$('#view-contact').innerHTML='<div class="page"><h2>📞 Contact</h2><p><b>'+esc(P.contact.role)+':</b> '+esc(P.contact.dev)+'</p><p><b>Email:</b> '+esc(P.contact.email)+'</p><p><b>Phone / WhatsApp:</b> '+esc(P.contact.phone)+'</p><p class="mut">For license purchase, renewal or bug reports — email is the fastest way.</p></div>';
+}
+function openAdmin(){
+if(sessionStorage.getItem('hs_admin')!=='1'){openLogin();return}
+const P=pages();const issued=LS.get('hs_issued',[]);const li=licInfo();
+$('#adminBody').innerHTML=
+'<div class="tabs" id="admTabs" style="margin-bottom:12px">'+
+'<button class="tab active" data-t="lic">Licenses</button><button class="tab" data-t="stats">Usage Stats</button><button class="tab" data-t="content">Price / Tutorial / Contact / Payment</button><button class="tab" data-t="rules">Rules & Limits</button><button class="tab" data-t="danger">Danger Zone</button></div>'+
+'<div id="admPane"></div>';
+function pane(t){
+const el=$('#admPane');
+if(t==='lic'){
+el.innerHTML='<div class="msec"><h4>Register subscriber (name + Gmail) & generate key</h4><div class="grid2">'+
+'<label class="sel">Buyer name <input id="lkName" placeholder="e.g. Rahim Uddin"></label>'+
+'<label class="sel">Buyer Gmail <input id="lkEmail" type="email" placeholder="buyer@gmail.com"></label></div>'+
+'<div class="grid3" style="margin-top:8px">'+
+'<label class="sel">Plan <select id="lkPlan"><option>Monthly</option><option>Yearly</option><option>Lifetime</option><option>Custom</option></select></label>'+
+'<label class="sel">Days (0=lifetime) <input type="number" id="lkDays" value="30" min="0"></label>'+
+'<label class="sel">Seats <input type="number" id="lkSeats" value="1" min="1"></label></div>'+
+'<div class="trow" style="margin-top:8px"><button class="btn primary" id="lkGen">🔑 Generate & register</button><span class="mut">Key is personally signed to the buyer name + Gmail — after generating, the <b>📦 Access Box</b> opens automatically; copy it and send to the buyer</span></div>'+
+'<div id="lkOut" class="fnprev" style="margin-top:8px;display:none"></div></div>'+
+'<div class="msec"><h4>Subscribers & issued keys</h4>'+(issued.length?'<table style="width:100%;font-size:12px;color:var(--mut)">'+issued.map((k,i)=>'<tr><td style="padding:4px"><b style="color:var(--txt)">'+esc(k.name||'—')+'</b><br>'+esc(k.email||'—')+'</td><td>'+esc(k.plan)+'</td><td>'+esc(String(k.exp))+'</td><td>'+k.seats+'</td><td>'+licState(k)+'</td><td style="white-space:nowrap"><button class="btn sm" data-hv="'+i+'">📦 box</button> <button class="btn sm" data-cp="'+i+'">copy</button> <button class="btn sm" data-mail="'+i+'">📧 mail</button> <button class="btn sm" data-ext="'+i+'">+30d</button> <button class="btn sm" data-rev="'+i+'">'+(k.revoked?'restore':'revoke')+'</button></td></tr>').join('')+'</table>':'<p class="mut">No subscribers yet. When someone buys: take their name + Gmail, register below — the Access Box will open automatically, copy it and send to the buyer.</p>')+'</div>';
+el.querySelectorAll('[data-hv]').forEach(b=>b.onclick=()=>openHandover(issued[+b.dataset.hv]));
+function licState(k){if(k.revoked)return '<span class="chip bad">revoked</span>';if(k.exp!=='lifetime'&&new Date(k.exp+'T23:59:59').getTime()<Date.now())return '<span class="chip warn">expired</span>';return '<span class="chip ok">active</span>'}
+$('#lkGen').onclick=()=>{
+const name=$('#lkName').value.trim(),email=$('#lkEmail').value.trim().toLowerCase();
+if(!name||!email){toast('Buyer name + Gmail required','bad');return}
+const plan=$('#lkPlan').value,days=+$('#lkDays').value,seats=Math.max(1,+$('#lkSeats').value);
+const key=genKey(plan,plan==='Lifetime'?0:days,seats,name,email);
+issued.unshift({key:key,plan:plan,exp:plan==='Lifetime'?'lifetime':new Date(Date.now()+days*864e5).toISOString().slice(0,10),seats:seats,name:name,email:email,created:new Date().toISOString().slice(0,10),revoked:false});
+LS.set('hs_issued',issued);
+const o=$('#lkOut');o.style.display='';o.textContent=key;
+navigator.clipboard&&navigator.clipboard.writeText(key);
+toast('Registered '+name+' ('+email+') — key copied','ok');pane('lic');openHandover(issued[0]);
+};
+el.querySelectorAll('[data-rev]').forEach(b=>b.onclick=()=>{const i=+b.dataset.rev;issued[i].revoked=!issued[i].revoked;LS.set('hs_issued',issued);pane('lic')});
+el.querySelectorAll('[data-cp]').forEach(b=>b.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(issued[+b.dataset.cp].key);toast('Copied','ok')});
+el.querySelectorAll('[data-mail]').forEach(b=>b.onclick=()=>{
+const k=issued[+b.dataset.mail];
+const subj='Your HS Stock Metadata Studio access — '+k.plan;
+const body='Hello '+(k.name||'friend')+',\n\nThank you for your subscription! Here is your personal license key for HS Stock Metadata Studio:\n\n'+k.key+'\n\nHow to activate:\n1. Open your HS Stock Metadata Studio link in Chrome or Edge browser.\n2. In the "License Required" box, paste the key and press "Activate Key".\n\nPlan: '+k.plan+'\nValid until: '+k.exp+'\nSeats: '+k.seats+'\nLicensed to: '+k.name+' <'+k.email+'>\n\nThis key is personal — it is signed to your name and Gmail.\nSupport: hs047502@gmail.com / 01746443525\n\n— Md. Hridoy Sarkar';
+location.href='mailto:'+k.email+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+});
+el.querySelectorAll('[data-ext]').forEach(b=>b.onclick=()=>{
+const i=+b.dataset.ext;const old=issued[i];
+const base=old.exp!=='lifetime'&&new Date(old.exp+'T23:59:59').getTime()>Date.now()?new Date(old.exp+'T23:59:59').getTime():Date.now();
+const exp=new Date(base+30*864e5).toISOString().slice(0,10);
+const key=genKey(old.plan,0,old.seats,old.name,old.email,exp);
+old.revoked=true;
+issued.unshift({key:key,plan:old.plan,exp:exp,seats:old.seats,name:old.name,email:old.email,created:new Date().toISOString().slice(0,10),revoked:false});
+LS.set('hs_issued',issued);toast('Extended +30 days — new key issued, old key revoked','ok');pane('lic');openHandover(issued[0]);
+});
+}else if(t==='stats'){
+el.innerHTML='<div class="grid3">'+
+'<div class="msec"><h4>Generations</h4><p style="font-size:26px;color:var(--gold2)">'+stats.gen+'</p></div>'+
+'<div class="msec"><h4>Downloads</h4><p style="font-size:26px;color:var(--gold2)">'+stats.dl+'</p></div>'+
+'<div class="msec"><h4>CSV exports</h4><p style="font-size:26px;color:var(--gold2)">'+stats.csv+'</p></div>'+
+'<div class="msec"><h4>Renames</h4><p style="font-size:26px;color:var(--gold2)">'+stats.ren+'</p></div>'+
+'<div class="msec"><h4>This device license</h4><p>'+esc(li.label)+'</p></div>'+
+'<div class="msec"><h4>Keys issued</h4><p style="font-size:26px;color:var(--gold2)">'+issued.length+'</p><p class="mut">active: '+issued.filter(k=>!k.revoked).length+'</p></div>'+
+'<div class="msec"><h4>Subscribers (name+Gmail)</h4><p style="font-size:26px;color:var(--gold2)">'+issued.filter(k=>k.email).length+'</p><p class="mut">active now: '+issued.filter(k=>k.email&&!k.revoked&&(k.exp==='lifetime'||new Date(k.exp+'T23:59:59').getTime()>Date.now())).length+'</p></div></div>'+
+'<p class="mut">Note: this is a single-file offline tool, so usage stats are per-browser. Seats & expiry travel inside each license key; a key stops working everywhere once its period ends.</p>';
+}else if(t==='content'){
+el.innerHTML='<div class="msec"><h4>Pricing plans (one per line: name | price | period | features)</h4><textarea id="pcPlans" rows="6" style="width:100%">'+esc(P.plans.map(p=>[p.name,p.price,p.period,p.feat].join(' | ')).join('\n'))+'</textarea></div>'+
+'<div class="msec"><h4>Payment info</h4><div class="grid2"><label class="sel">bKash <input id="pcBk" value="'+esc(P.payment.bkash)+'"></label><label class="sel">Nagad <input id="pcNg" value="'+esc(P.payment.nogod)+'"></label></div><textarea id="pcNote" rows="3" style="width:100%;margin-top:8px">'+esc(P.payment.note)+'</textarea></div>'+
+'<div class="msec"><h4>Contact</h4><div class="grid3"><label class="sel">Name <input id="pcDev" value="'+esc(P.contact.dev)+'"></label><label class="sel">Email <input id="pcEm" value="'+esc(P.contact.email)+'"></label><label class="sel">Phone <input id="pcPh" value="'+esc(P.contact.phone)+'"></label></div></div>'+
+'<div class="msec"><h4>Tutorial steps (one per line)</h4><textarea id="pcTut" rows="8" style="width:100%">'+esc(P.tutorials.join('\n'))+'</textarea></div>'+
+'<button class="btn primary" id="pcSave">💾 Save content</button>';
+$('#pcSave').onclick=()=>{
+const np=$('#pcPlans').value.split(/\r?\n/).filter(l=>l.trim()).map(l=>{const p=l.split('|').map(x=>x.trim());return {name:p[0]||'Plan',price:p[1]||'',period:p[2]||'',feat:p[3]||'',hot:/yearly|monthly/i.test(p[0]||'')}});
+const npg={plans:np.length?np:P.plans,payment:{bkash:$('#pcBk').value,nogod:$('#pcNg').value,note:$('#pcNote').value},contact:{dev:$('#pcDev').value,email:$('#pcEm').value,phone:$('#pcPh').value,role:P.contact.role},tutorials:$('#pcTut').value.split(/\r?\n/).filter(l=>l.trim())};
+LS.set('hs_pages',npg);_pagesOK=false;renderPages(true);toast('Public pages updated','ok');
+};
+}else if(t==='rules'){
+el.innerHTML='<div class="msec"><h4>Marketplace rule limits</h4><table style="width:100%;font-size:12px">'+Object.keys(MKT).map(k=>'<tr><td style="padding:4px;color:var(--mut)">'+MKT[k].label+'</td><td>title ≤ <input type="number" data-mk="'+k+'" data-f="title" value="'+MKT[k].title+'" style="width:70px"></td><td>kw ≤ <input type="number" data-mk="'+k+'" data-f="kw" value="'+MKT[k].kw+'" style="width:60px"></td><td>kw min <input type="number" data-mk="'+k+'" data-f="kwMin" value="'+(MKT[k].kwMin||1)+'" style="width:60px"></td></tr>').join('')+'</table><button class="btn primary" id="rlSave" style="margin-top:8px">💾 Save rules</button></div>';
+$('#rlSave').onclick=()=>{
+el.querySelectorAll('[data-mk]').forEach(i=>{MKT[i.dataset.mk][i.dataset.f]=Math.max(1,+i.value||1)});
+LS.set('hs_mkt',Object.keys(MKT).reduce((a,k)=>(a[k]={title:MKT[k].title,kw:MKT[k].kw,kwMin:MKT[k].kwMin,kwSep:MKT[k].kwSep,catSep:MKT[k].catSep,label:MKT[k].label},a),{}));
+toast('Marketplace rules saved','ok');renderList();
+};
+}else{
+el.innerHTML='<div class="msec"><h4>Danger zone</h4><div class="trow"><button class="btn danger" id="dzStats">Reset usage stats</button><button class="btn danger" id="dzKeys">Delete issued keys</button><button class="btn danger" id="dzAll">Factory reset (this browser)</button><button class="btn" id="dzLogout">Logout admin</button></div></div>';
+$('#dzStats').onclick=()=>{stats.gen=stats.dl=stats.csv=stats.ren=0;saveStats();pane('stats');toast('Stats reset','ok')};
+$('#dzKeys').onclick=()=>{LS.set('hs_issued',[]);pane('lic');toast('Issued keys deleted','ok')};
+$('#dzAll').onclick=()=>{if(confirm('Delete ALL local data (keys, license, settings, pages)?')){localStorage.clear();location.reload()}};
+$('#dzLogout').onclick=()=>{sessionStorage.removeItem('hs_admin');closeModals();refreshGate();toast('Logged out','ok')};
+}
+}
+pane('lic');
+$('#admTabs').querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+$('#admTabs').querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');pane(b.dataset.t);
+});
+$('#mAdmin').hidden=false;
+}
+/* ============ EVENTS & INIT ============ */
+function syncToolbar(){
+$('#selMkt').innerHTML=Object.keys(MKT).map(k=>'<option value="'+k+'" '+(S.settings.mkt===k?'selected':'')+'>'+MKT[k].label+'</option>').join('');
+$('#selProv').innerHTML=Object.keys(PROVIDERS).map(k=>'<option value="'+k+'" '+(S.settings.prov===k?'selected':'')+'>'+PROVIDERS[k].label+'</option>').join('');
+$('#tgSingle').checked=S.settings.single;$('#tgSil').checked=S.settings.sil;$('#tgTrans').checked=S.settings.trans;$('#tgEmbed').checked=S.settings.embed;
+[['#tgSingleW','#tgSingle'],['#tgSilW','#tgSil'],['#tgTransW','#tgTrans'],['#tgEmbedW','#tgEmbed']].forEach(p=>{$(p[0]).classList.toggle('on',$(p[1]).checked)});
+const m=MKT[S.settings.mkt];
+$('#mktHint').textContent=m.label+' rules: title ≤ '+m.title+' chars · keywords '+ (m.kwMin||1)+'–'+m.kw+' · your limits: title ≤ '+S.settings.titleMax+' / kw ≤ '+S.settings.kwMax;
+}
+function wire(){
+$$('[data-view]').forEach(b=>b.addEventListener('click',()=>{
+const v=b.dataset.view;
+$$('.view').forEach(s=>s.hidden=true);$('#view-'+v).hidden=false;
+$$('header [data-view]').forEach(x=>x.classList.toggle('active',x===b||x.dataset.view===v));
+if(v!=='workspace')renderPages();
+if(v==='tutorials')loadTutVideo();
+}));
+$('#btnApi').onclick=openApi;
+$('#btnSettings').onclick=openSettings;
+$('#btnAdmin').onclick=openAdmin;
+$('#btnOwner').onclick=openAdmin;
+let logoClicks=0,logoT=0;
+$('#logo').addEventListener('click',()=>{const n=Date.now();logoClicks=(n-logoT<2500)?logoClicks+1:1;logoT=n;if(logoClicks>=5){logoClicks=0;openAdmin()}});
+document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.shiftKey&&(e.key==='A'||e.key==='a')){e.preventDefault();openAdmin()}});
+$$('.modal .x').forEach(x=>x.onclick=closeModals);
+$$('.modal').forEach(m=>m.addEventListener('mousedown',e=>{if(e.target===m)closeModals()}));
+$('#btnUpload').onclick=()=>$('#fileInput').click();
+$('#btnFolder').onclick=()=>$('#folderInput').click();
+$('#fileInput').onchange=e=>{addFiles(e.target.files);e.target.value=''};
+$('#folderInput').onchange=e=>{addFiles(e.target.files);e.target.value=''};
+$('#dropzone').onclick=()=>$('#fileInput').click();
+['dragenter','dragover'].forEach(ev=>document.addEventListener(ev,e=>{e.preventDefault();$('#dropzone').classList.add('hot')}));
+['dragleave','drop'].forEach(ev=>document.addEventListener(ev,e=>{e.preventDefault();if(ev==='drop'||e.target===document)$('#dropzone').classList.remove('hot')}));
+document.addEventListener('drop',async e=>{
+e.preventDefault();
+const dt=e.dataTransfer;if(!dt)return;
+const entries=[];
+if(dt.items&&dt.items.length&&dt.items[0].webkitGetAsEntry){
+for(const it of dt.items){const en=it.webkitGetAsEntry&&it.webkitGetAsEntry();if(en)entries.push(en)}
+}
+if(entries.length){await addEntries(entries,'')}
+else if(dt.files&&dt.files.length){await addFiles(dt.files)}
+});
+$('#btnStart').onclick=startQueue;
+$('#btnStop').onclick=()=>{S.stop=true;toast('Stopping after the current file…','bad')};
+/* One delegated listener for every row field: rows can be created/destroyed freely and
+   typing never re-attaches thousands of handlers (this is what made big lists laggy). */
+function scheduleChecks(row,it){
+if(row._ckT)clearTimeout(row._ckT);
+row._ckT=setTimeout(()=>{row._ckT=0;try{it.checks=runChecks(it);renderChecks(row,it)}catch(e){}},180);
+}
+$('#items').addEventListener('input',e=>{
+const t=e.target;if(!t||!t.dataset||!t.dataset.act)return;
+const row=t.closest('.row');if(!row)return;
+const it=byId(row.dataset.id);if(!it||!it.meta)return;
+const act=t.dataset.act;
+try{
+if(act==='title'){it.meta.title=cleanTitle(t.value,300);updCounts(row,it);updFn(row,it);scheduleChecks(row,it)}
+else if(act==='desc'){it.meta.description=t.value;updCounts(row,it);scheduleChecks(row,it)}
+else if(act==='catp'){it.meta.catP=t.value;scheduleChecks(row,it)}
+else if(act==='cats'){it.meta.catS=t.value}
+}catch(err){reportErr('Field edit: '+String(err&&err.message||err))}
+});
+$('#items').addEventListener('keydown',e=>{
+if(e.key!=='Enter')return;
+const t=e.target;if(!t||t.dataset.act!=='kwadd')return;
+e.preventDefault();
+const row=t.closest('.row');if(!row)return;
+const it=byId(row.dataset.id);if(!it||!it.meta)return;
+const v=(t.value||'').trim().toLowerCase();
+if(!v)return;
+if(it.meta.keywords.some(k=>k.w===v)){toast('Keyword already exists','bad');return}
+if(it.meta.keywords.length>=S.settings.kwMax){toast('Keyword limit reached ('+S.settings.kwMax+')','bad');return}
+it.meta.keywords.push({w:v,tier:'usage',conf:'high',state:'ok',note:'manual'});
+t.value='';it.checks=runChecks(it);renderChips(row,it);updCounts(row,it);renderChecks(row,it);
+});
+$('#selMkt').onchange=e=>{S.settings.mkt=e.target.value;saveSettings();syncToolbar();renderList()};
+$('#selProv').onchange=e=>{S.settings.prov=e.target.value;saveSettings();syncToolbar()};
+$('#selFormat').onchange=e=>{S.format=e.target.value;renderList()};
+$('#tabs').querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+$('#tabs').querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');S.filter=b.dataset.f;renderList();
+});
+[['#tgSingle','single'],['#tgSil','sil'],['#tgTrans','trans'],['#tgEmbed','embed']].forEach(p=>{
+$(p[0]).addEventListener('change',e=>{S.settings[p[1]]=e.target.checked;saveSettings();syncToolbar()});
+});
+$('#btnRenameAll').onclick=()=>{
+const list=S.items.filter(i=>i.meta);if(!list.length){toast('Nothing to rename','bad');return}
+list.forEach(doRename);toast(list.length+' file(s) renamed to their SEO titles','ok');
+};
+$('#btnDownloadAll').onclick=()=>downloadItems(S.items);
+$('#btnCsv').onclick=exportCSV;
+$('#btnClear').onclick=()=>{if(!S.items.length)return;if(confirm('Remove all '+S.items.length+' files from the workspace?')){S.items.forEach(dropItem);S.items=[];PVQ.length=0;GSQ.length=0;renderList();setBar(null)}};
+$('#btnTrial').onclick=()=>{LS.set('hs_trial',Date.now());refreshGate();toast('3-day unlimited trial started 🎉','ok')};
+$('#btnKey').onclick=()=>{
+const k=parseKey($('#keyInput').value);
+if(!k){toast('Invalid key format / signature','bad');return}
+const issued=LS.get('hs_issued',[]);
+if(issued.some(x=>x.key===$('#keyInput').value.trim()&&x.revoked)){toast('This key was revoked by the owner','bad');return}
+if(k.exp!=='lifetime'&&new Date(k.exp+'T23:59:59').getTime()<Date.now()){toast('Key expired','bad');return}
+LS.set('hs_license',k);refreshGate();toast('License activated: '+k.plan+' → '+k.exp,'ok');
+};
+$('#items').addEventListener('click',async e=>{
+const chipX=e.target.closest('.kw b');
+const chip=e.target.closest('.kw');
+const btn=e.target.closest('button[data-act]');
+const row=e.target.closest('.row');if(!row)return;
+const it=S.items.find(i=>i.id===row.dataset.id);if(!it)return;
+if(chipX){
+const i=+chipX.dataset.x;it.meta.keywords.splice(i,1);it.checks=runChecks(it);renderChips(row,it);renderChecks(row,it);row.querySelector('.c-kw').textContent=it.meta.keywords.length+'/'+S.settings.kwMax;return;
+}
+if(chip&&!chipX){
+const i=+chip.dataset.i;const k=it.meta.keywords[i];
+k.state=k.state==='ok'?'warn':(k.state==='warn'?'bad':'ok');
+it.checks=runChecks(it);renderChips(row,it);renderChecks(row,it);return;
+}
+if(!btn)return;
+const act=btn.dataset.act;
+if(act==='gen')generateItem(it);
+else if(act==='approve'){it.meta.keywords.forEach(k=>k.state='ok');it.checks=runChecks(it);renderChips(row,it);renderChecks(row,it);toast('All keywords approved ✅','ok')}
+else if(act==='rename'){doRename(it);toast('Renamed → '+it.outName,'ok')}
+else if(act==='dl')downloadItems([it]);
+else if(act==='rm'){const qi=PVQ.indexOf(it);if(qi>=0)PVQ.splice(qi,1);const gi=GSQ.indexOf(it);if(gi>=0)GSQ.splice(gi,1);dropItem(it);S.items=S.items.filter(x=>x.id!==it.id);renderList()}
+else if(act==='attach'){const mi=$('#manualInput');mi.dataset.id=it.id;mi.click()}
+else if(act==='zoom'){$('#prevImg').src=it.previewURL;$('#prevTitle').textContent=it.name;$('#prevInfo').textContent=(it.dim?it.dim[0]+'×'+it.dim[1]+' px · ':'')+'preview source: '+it.prevSrc;$('#mPreview').hidden=false}
+});
+$('#manualInput').onchange=async e=>{
+const f=e.target.files[0];if(!f)return;
+const it=byId(e.target.dataset.id);e.target.value='';
+if(!it)return;
+try{
+const cv=await decodeFileToCanvas(f,extOf(f.name),2400);
+if(!cv)throw new Error('unreadable image');
+(it._urls||[]).forEach(u=>{try{URL.revokeObjectURL(u)}catch(err){}});
+it._urls=[];
+it.canvas=cv;it.dim=[cv.width,cv.height];
+it.previewBlob=await canvasToBlob(canvasCap(cv,PREVIEW_MAX),'image/jpeg',0.9);
+it.jpgBlob=null;
+it.apiBlob=await canvasToBlob(apiCanvas(cv),'image/jpeg',0.82);
+it.apiImage=null;
+it.previewURL=trackURL(it,URL.createObjectURL(it.previewBlob||f));
+it.prevSrc='manual';it.hasVisual=true;
+if(['png','webp','gif'].includes(extOf(f.name)))it.alpha=alphaCheck(cv);
+refreshRow(it);toast('Preview attached for '+it.name,'ok');
+}catch(err){toast('Could not read that image','bad')}
+};
+}
+/* Nothing may escape init(): a single failure used to leave the whole workspace dead. */
+const _errSeen=new Set();
+function reportErr(msg){
+msg=String(msg||'').slice(0,220);
+if(!msg||_errSeen.has(msg))return;
+_errSeen.add(msg);
+if(_errSeen.size>80)_errSeen.clear();
+try{console.error('[HS] '+msg)}catch(e){}
+try{toast('⚠ '+msg,'bad')}catch(e){}
+}
+window.addEventListener('error',e=>{reportErr('Script error: '+((e&&e.message)||'unknown'))});
+window.addEventListener('unhandledrejection',e=>{const r=e&&e.reason;reportErr('Unhandled: '+String((r&&(r.message||r))||'unknown'))});
+function init(){
+const t0=(window.performance&&performance.now)?performance.now():Date.now();
+try{
+const savedMkt=LS.get('hs_mkt',null);
+if(savedMkt)Object.keys(savedMkt).forEach(k=>{if(MKT[k])Object.assign(MKT[k],savedMkt[k])});
+const dl=document.createElement('datalist');dl.id='dlTax';
+dl.innerHTML=Array.from(VOCAB).sort().map(v=>'<option value="'+esc(v)+'">').join('');
+document.body.appendChild(dl);
+/* the header logo reuses the favicon data-URL: one copy of the image, not two */
+try{const ic=document.querySelector('link[rel="icon"]');const lg=document.getElementById('logo');if(ic&&lg&&!lg.getAttribute('src'))lg.src=ic.href}catch(e){}
+syncToolbar();wire();renderPages(true);renderList();refreshGate();
+}catch(err){
+console.error('init failed',err);
+try{toast('Startup error: '+String(err&&err.message||err),'bad')}catch(e){}
+}
+try{
+const dt=((window.performance&&performance.now)?performance.now():Date.now())-t0;
+window.__hsBootMs=Math.round(dt);
+console.info('HS Stock Metadata Studio ready in '+window.__hsBootMs+' ms');
+}catch(e){}
+}
+init();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a39c1e4188e87096',t:'MTc4OTE4NjgxMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
